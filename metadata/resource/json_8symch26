@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_8symch26",
+        "url": "json/SeverError.asp"
+    },
+    "name": "json2",
+    "designerId": "be53e0a6-b557-4ee0-88e8-fe1b11f170f3"
+}

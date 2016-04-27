@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_7vqyyca4",
+        "url": "json/SeverCluster.asp"
+    },
+    "name": "json2",
+    "designerId": "bc39f7c8-3fe1-44b5-9ad3-69a66af85cbf"
+}

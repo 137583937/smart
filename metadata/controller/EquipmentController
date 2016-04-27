@@ -1,0 +1,256 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "EquipmentController"
+    },
+    "name": "MyController",
+    "designerId": "5972972d-b8bd-4cb1-991b-c91202ca54ef",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#EquipmentList",
+                "designer|params": [
+                    "dataview",
+                    "record",
+                    "item",
+                    "index",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.grid.Panel",
+                "fn": "onEquipmentListItemDblClick",
+                "implHandler": [
+                    "var equip=Ext.create('smart.view.EquipmentDetail');",
+                    "        equip.show();"
+                ],
+                "name": "itemdblclick"
+            },
+            "name": "onEquipmentListItemDblClick",
+            "designerId": "b09ac930-9bd5-4fb6-b2b3-90ae084df21f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#EquipmentWithUser",
+                "designer|params": [
+                    "dataview",
+                    "record",
+                    "item",
+                    "index",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.grid.Panel",
+                "fn": "onEquipmentWithUserItemDblClick",
+                "implHandler": [
+                    "Ext.Msg.show({",
+                    "    title:'提示',",
+                    "    msg: '确定要取消是被与该用户的关联吗？',",
+                    "    buttons: Ext.Msg.YESNO,",
+                    "    icon: Ext.Msg.QUESTION,",
+                    "    fn: function(btn) {",
+                    "        if (btn === 'yes') {",
+                    "            console.log('Yes pressed');",
+                    "        } else{",
+                    "            console.log('No pressed');",
+                    "        } ",
+                    "    }",
+                    "});"
+                ],
+                "name": "itemdblclick"
+            },
+            "name": "onEquipmentWithUserItemDblClick",
+            "designerId": "4640ec8a-4ba6-43a8-ae66-02690a3b318d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#DeleteSelectedEquipmentBtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onDeleteSelectedEquipmentBtnClick",
+                "implHandler": [
+                    "Ext.Msg.show({",
+                    "    title:'提示',",
+                    "    msg: '确定要删除设备吗？',",
+                    "    buttons: Ext.Msg.YESNOCANCEL,",
+                    "    icon: Ext.Msg.QUESTION,",
+                    "    fn: function(btn) {",
+                    "        if (btn === 'yes') {",
+                    "            console.log('Yes pressed');",
+                    "        } else if (btn === 'no') {",
+                    "            console.log('No pressed');",
+                    "        } else {",
+                    "            console.log('Cancel pressed');",
+                    "        } ",
+                    "    }",
+                    "});"
+                ],
+                "name": "click"
+            },
+            "name": "onDeleteSelectedEquipmentBtnClick",
+            "designerId": "12dcf16c-7d50-44e5-8219-ee3cfc86eb1b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#CanfirmEquipmentAdd",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onCanfirmEquipmentAddClick",
+                "name": "click"
+            },
+            "name": "onCanfirmEquipmentAddClick",
+            "designerId": "96bfa831-6be8-4a04-8edf-5d46e29ca02d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#CancenEquipmentAdd",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onCancenEquipmentAddClick",
+                "implHandler": [
+                    " button.up('window').destroy();"
+                ],
+                "name": "click"
+            },
+            "name": "onCancenEquipmentAddClick",
+            "designerId": "ab2e551a-c875-480c-b3a8-efc8a8933e8f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#AddEquipment",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onAddEquipmentClick",
+                "implHandler": [
+                    "var equip=Ext.create('smart.view.AddNewEquipment');",
+                    "                equip.show();"
+                ],
+                "name": "click"
+            },
+            "name": "onAddEquipmentClick",
+            "designerId": "80100283-8d75-4fc3-973f-0a057371d07c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#DeleteEquipment",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onDeleteEquipmentClick",
+                "name": "click"
+            },
+            "name": "onDeleteEquipmentClick",
+            "designerId": "01e8f938-d1cc-490e-b3b2-84fdb44c9e39"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#Equipment",
+                "designer|params": [
+                    "component",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.form.Panel",
+                "fn": "onEquipmentAfterRender",
+                "implHandler": [
+                    "//获取系统所有设备的基本统计信息",
+                    "",
+                    "        console.log(component);",
+                    "        //Ajax获取",
+                    "         Ext.Ajax.request({",
+                    "                    url: 'EquipmentAction',",
+                    "                    params: {",
+                    "",
+                    "                    },",
+                    "                    success: function(response){",
+                    "                        content = response.responseText;",
+                    "",
+                    "                        //接收到的数据转化成Data对象，送给Form",
+                    "",
+                    "                        var datejson=Ext.JSON.decode(content);",
+                    "                        console.log(datejson);",
+                    "                        component.getForm().setValues(datejson);",
+                    "",
+                    "                    },",
+                    "                    failure: function(response, opts) {",
+                    "                        console.log('server-side failure with status code ' + response.status);",
+                    "                    }",
+                    "                });"
+                ],
+                "name": "afterrender"
+            },
+            "name": "onEquipmentAfterRender",
+            "designerId": "cacd57ca-db50-4233-b357-a6f60c93bfdc"
+        }
+    ]
+}

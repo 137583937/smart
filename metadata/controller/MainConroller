@@ -1,0 +1,194 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainConroller"
+    },
+    "name": "MyController",
+    "designerId": "a1a2a521-9cea-4ac5-8c08-a51c4595c78d",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#LoginBtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onLoginBtnClick",
+                "implHandler": [
+                    "",
+                    "var sform = button.up('form').getForm();",
+                    "",
+                    "                // Submit the Ajax request and handle the response",
+                    "                sform.submit({",
+                    "                    success: function(sform, action) {",
+                    "                       Ext.create('smart.view.MainView').show();",
+                    "                       Ext.getCmp('LoginWindow').destroy();",
+                    "                    },",
+                    "                    failure: function(sform, action) {",
+                    "                        Ext.Msg.alert('Failed','帐号或密码错误，请重新输入');",
+                    "                    }",
+                    "                });",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onLoginBtnClick",
+            "designerId": "518b3aed-4568-4377-971c-0c841dcd4e91"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#First",
+                "designer|params": [
+                    "item",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.menu.Item",
+                "fn": "onFirstClick",
+                "implHandler": [
+                    "Ext.getCmp('Content').getLayout().setActiveItem(0);",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onFirstClick",
+            "designerId": "05116d85-26dd-4c9a-8023-0db71664432b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#UserMgr",
+                "designer|params": [
+                    "item",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.menu.Item",
+                "fn": "onUserMgrClick",
+                "implHandler": [
+                    "Ext.getCmp('Content').getLayout().setActiveItem(1);",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onUserMgrClick",
+            "designerId": "38be9e2c-27d5-4845-80ba-e71caf2aad66"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#EquipmentMgr",
+                "designer|params": [
+                    "item",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.menu.Item",
+                "fn": "onEquipmentMgrClick",
+                "implHandler": [
+                    "Ext.getCmp('Content').getLayout().setActiveItem(2);",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onEquipmentMgrClick",
+            "designerId": "ae1c7239-901f-4942-9867-85329088fd32"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#SeverMgr",
+                "designer|params": [
+                    "item",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.menu.Item",
+                "fn": "onSeverMgrClick",
+                "implHandler": [
+                    "Ext.getCmp('Content').getLayout().setActiveItem(3);",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onSeverMgrClick",
+            "designerId": "90d7530f-f291-4ce0-b8e3-305b9d48e21d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#Quit",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onQuitClick",
+                "implHandler": [
+                    "//-----退出程序",
+                    "Ext.getCmp('MainView').destroy();",
+                    "//--向服务器发送退出消息",
+                    "        Ext.Ajax.request({",
+                    "            url: 'LoginOutAction',",
+                    "            params: {",
+                    "                //根据上传用户的ID--目前还没有存储用户的ID，所以没办法上传",
+                    "                id: record.get('id')",
+                    "            },",
+                    "            success: function(response){",
+                    "                ",
+                    "",
+                    "            },",
+                    "            failure: function(response, opts) {",
+                    "                console.log('server-side failure with status code ' + response.status);",
+                    "            }",
+                    "        });",
+                    "",
+                    "Ext.create('smart.view.Login').show();"
+                ],
+                "name": "click"
+            },
+            "name": "onQuitClick",
+            "designerId": "71cf323f-da20-41c5-a99d-42bddc7d5c4e"
+        }
+    ]
+}

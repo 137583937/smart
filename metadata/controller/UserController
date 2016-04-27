@@ -1,0 +1,414 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UserController"
+    },
+    "name": "MyController",
+    "designerId": "ed72923b-871f-4362-9f38-352c37519e22",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#UserList",
+                "designer|params": [
+                    "dataview",
+                    "record",
+                    "item",
+                    "index",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.grid.Panel",
+                "fn": "onUserListItemDblClick",
+                "implHandler": [
+                    "var user=Ext.create('smart.view.UserDetail');",
+                    "user.show();"
+                ],
+                "name": "itemdblclick"
+            },
+            "name": "onUserListItemDblClick",
+            "designerId": "006dd231-d7c3-4df7-99f6-bd47ef02008e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#ConfirmUserAdd",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onConfirmUserAddClick",
+                "implHandler": [
+                    "//----添加新用户",
+                    "var sform = button.up('form').getForm();",
+                    "",
+                    "                        // Submit the Ajax request and handle the response",
+                    "                        sform.submit({",
+                    "                            success: function(sform, action) {",
+                    "                               button.up('window').destroy();",
+                    "                                 Ext.Msg.alert('Failed','添加成功');",
+                    "                            },",
+                    "                            failure: function(sform, action) {",
+                    "                                Ext.Msg.alert('Failed','添加失败');",
+                    "                            }",
+                    "                        });",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onConfirmUserAddClick",
+            "designerId": "a46b7ab0-39c4-434e-9dac-65b7ce913036"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#CancenUserAdd",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onCancenUserAddClick",
+                "implHandler": [
+                    "button.up('window').destroy();"
+                ],
+                "name": "click"
+            },
+            "name": "onCancenUserAddClick",
+            "designerId": "ebc4080a-1f61-4ece-af6d-27441bf39834"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#AddNewUser",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onAddNewUserClick",
+                "implHandler": [
+                    "Ext.create('smart.view.AddNewUser').show();"
+                ],
+                "name": "click"
+            },
+            "name": "onAddNewUserClick",
+            "designerId": "46dd4924-e6a9-45e4-aa9b-eac161bb8871"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#EditUserInfobtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onEditUserInfobtnClick",
+                "implHandler": [
+                    "//开启Form的输入功能",
+                    "",
+                    "var fields=button.up('form').items;",
+                    "fields=fields.filter('isFormField',true);",
+                    "fields.each(function(it){",
+                    "    it.setReadOnly(false);",
+                    "});",
+                    "//设置第一个FieldFocus",
+                    "",
+                    "fields.first().focus();",
+                    "",
+                    "//设置提交按钮可点击",
+                    "",
+                    "var submitbtn=button.nextSibling();",
+                    "submitbtn.setDisabled(false);"
+                ],
+                "name": "click"
+            },
+            "name": "onEditUserInfobtnClick",
+            "designerId": "3dd72241-dbbc-4e27-8a9b-7e35e55d7647"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#DeleteSelectEquipmentbtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onDeleteSelectEquipmentbtnClick",
+                "implHandler": [
+                    "        var grid = button.up('window').down('grid');",
+                    "        var select=grid.getSelectionModel().getSelection();",
+                    "        if(select[0]){",
+                    "            grid.getStore().remove(select);",
+                    "        }",
+                    "else{",
+                    "    Ext.Msg.alert('','请先选择设备');",
+                    "}"
+                ],
+                "name": "click"
+            },
+            "name": "onDeleteSelectEquipmentbtnClick",
+            "designerId": "e1964697-56a3-4040-ade6-1ae983a13003"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#SubmitUserEditbtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onSubmitUserEditbtnClick",
+                "implHandler": [
+                    " //提交对用户信息的修改",
+                    "var sform = button.up('form').getForm();",
+                    "",
+                    "                                // Submit the Ajax request and handle the response",
+                    "                                sform.submit({",
+                    "                                    success: function(sform, action) {",
+                    "",
+                    "                                         Ext.Msg.alert('success','添加成功');",
+                    "                                    },",
+                    "                                    failure: function(sform, action) {",
+                    "                                        Ext.Msg.alert('Failed','添加失败');",
+                    "                                    }",
+                    "                                });"
+                ],
+                "name": "click"
+            },
+            "name": "onSubmitUserEditbtnClick",
+            "designerId": "b3b2930e-9a54-46c9-a2d5-3ce94cbd2628"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#EditSelectEquipmentbtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onEditSelectEquipmentbtnClick",
+                "implHandler": [
+                    " //--编辑选中设备",
+                    "",
+                    "//注意：编辑选中设备和添加新设备使用的是同一个窗口！",
+                    "",
+                    "var grid = button.up('window').down('grid');",
+                    "var select=grid.getSelectionModel().getSelection()[0];",
+                    "",
+                    "if(select){",
+                    " var selectdata=select.getData();",
+                    "console.log(selectdata);",
+                    "",
+                    "//创建编辑设备窗口",
+                    "var win=Ext.create('smart.view.AddNewEquipment');",
+                    "win.setTitle('编辑设备');",
+                    "win.show();",
+                    "",
+                    "//赋值到表单中",
+                    "",
+                    "var form=win.down('form').getForm();",
+                    "    ",
+                    "form.setValues(selectdata);",
+                    "}",
+                    "else{",
+                    "    Ext.Msg.alert('','请先选择设备');",
+                    "}",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onEditSelectEquipmentbtnClick",
+            "designerId": "70f79bc6-684b-4f09-ae5c-86970ca17874"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#CanfirmEquipmentAdd",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onCanfirmEquipmentAddClick",
+                "implHandler": [
+                    "//确定添加新设备到用户",
+                    "            var sform = button.up('form').getForm();",
+                    "",
+                    "",
+                    "                          sform.submit({",
+                    "                              url:function(){",
+                    "                                  //url需要根据标题确定是添加设备还是编辑设备",
+                    "                              },",
+                    "                                           success: function(sform, action) {",
+                    "                                     button.up('window').destroy();",
+                    "                                                 Ext.Msg.alert('success','成功');",
+                    "                                           },",
+                    "                                            failure: function(sform, action) {",
+                    "                                                Ext.Msg.alert('Failed','失败');",
+                    "                                           }",
+                    "                            });"
+                ],
+                "name": "click"
+            },
+            "name": "onCanfirmEquipmentAddClick",
+            "designerId": "c7cac5d9-601b-4261-acd7-a75fb826a9b2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#AddNewEquipment",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onAddNewEquipmentClick",
+                "implHandler": [
+                    "",
+                    "",
+                    "        //创建编辑设备窗口",
+                    "        var win=Ext.create('smart.view.AddNewEquipment');",
+                    "        win.setTitle('添加设备到用户');",
+                    "        win.show();",
+                    "",
+                    "        //赋值到表单中",
+                    "",
+                    "        var form=win.down('form');",
+                    "        form.add({",
+                    "",
+                    "                           xtype: 'textfield',",
+                    "                            width: 300,",
+                    "                            fieldLabel: '用户ID',",
+                    "                            name: 'userid',",
+                    "            disabled:true",
+                    "        });",
+                    "    form.getForm().setValues({",
+                    "        userid:'YLM007'",
+                    "    });",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onAddNewEquipmentClick",
+            "designerId": "08f12f34-86b9-4c75-b286-75b2af5fd16d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#AllUser",
+                "designer|params": [
+                    "component",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.form.Panel",
+                "fn": "onAllUserAfterRender",
+                "implHandler": [
+                    "//加载用户的一般统计信息",
+                    "",
+                    "console.log(component);",
+                    "//获取管理员的个人信息",
+                    " Ext.Ajax.request({",
+                    "            url: 'UserAction',",
+                    "            params: {",
+                    "",
+                    "            },",
+                    "            success: function(response){",
+                    "                content = response.responseText;",
+                    "",
+                    "                //接收到的数据转化成Data对象，送给Form",
+                    "",
+                    "                var datejson=Ext.JSON.decode(content);",
+                    "                console.log(datejson);",
+                    "                component.getForm().setValues(datejson);",
+                    "",
+                    "            },",
+                    "            failure: function(response, opts) {",
+                    "                console.log('server-side failure with status code ' + response.status);",
+                    "            }",
+                    "        });",
+                    ""
+                ],
+                "name": "afterrender"
+            },
+            "name": "onAllUserAfterRender",
+            "designerId": "d644b5c5-3996-45dc-9425-dd0aa8530f1d"
+        }
+    ]
+}

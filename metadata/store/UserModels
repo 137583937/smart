@@ -1,0 +1,47 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userAlias": "usermodels",
+        "designer|userClassName": "UserModels",
+        "model": "UserModel",
+        "pageSize": 10,
+        "storeId": "UserModels"
+    },
+    "designerId": "a87bb930-87d2-49c0-b4d6-0e65c62cd9b1",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "UserListAction"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "929eff96-de1b-4018-aa15-c518ea4d370c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "a05728a5-7db5-421e-b521-88655fb1499b"
+                }
+            ]
+        }
+    ]
+}

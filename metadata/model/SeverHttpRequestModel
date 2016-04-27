@@ -1,0 +1,55 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "severhttprequestmodel",
+        "designer|userClassName": "SeverHttpRequestModel"
+    },
+    "name": "MyModel",
+    "designerId": "6f9b5a2b-e71d-41d9-a6af-f444ce487959",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "time"
+            },
+            "name": "MyField",
+            "designerId": "47c9e2b3-e32d-4387-9755-d27fce69bb5f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Session"
+            },
+            "name": "MyField1",
+            "designerId": "0976e20a-4d24-42e5-b79d-6af5a0f5f0e8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "HttpRequest"
+            },
+            "name": "MyField2",
+            "designerId": "4bfd7b1a-566f-4422-8911-083cfdd14b06"
+        }
+    ]
+}

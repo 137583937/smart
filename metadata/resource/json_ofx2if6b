@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_ofx2if6b",
+        "url": "json/Notice.asp"
+    },
+    "name": "json1",
+    "designerId": "fe961cc6-45c9-4d36-beb5-da2d4183add1"
+}

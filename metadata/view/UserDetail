@@ -1,0 +1,410 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userClassName": "UserDetail",
+        "height": 571,
+        "itemId": "mywindow",
+        "modal": true,
+        "title": "用户详细信息",
+        "width": 754
+    },
+    "name": "MyWindow",
+    "designerId": "5814db44-1feb-474f-a5f4-53eee8667485",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": "0 10",
+                "container|columns": 5,
+                "header": false,
+                "height": null,
+                "itemId": "Uform",
+                "layout": "table",
+                "manageHeight": false,
+                "title": "My Form",
+                "url": "EditeUserAction"
+            },
+            "name": "MyForm",
+            "designerId": "eb892a47-e504-4f99-8e25-246e342d9fbe",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "ad82a53c-c0a6-4979-af1c-7d8c9787022d",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "EditUserInfobtn",
+                                "layout|flex": null,
+                                "text": "修改个人信息"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "2aca0070-5053-4513-bad2-b97dbd272fec"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "disabled": true,
+                                "id": null,
+                                "itemId": "SubmitUserEditbtn",
+                                "layout|flex": null,
+                                "text": "提交修改"
+                            },
+                            "name": "MyButton6",
+                            "designerId": "9f1d9b11-2bb8-401a-a055-bd4d6d56d21f"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": null,
+                                "itemId": "EditSelectEquipmentbtn",
+                                "layout|flex": null,
+                                "text": "编辑选中设备"
+                            },
+                            "name": "MyButton7",
+                            "designerId": "2cd00141-6043-41a6-bfb9-9eb69b2943ca"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "DeleteSelectEquipmentbtn",
+                                "layout|flex": null,
+                                "text": "删除选中设备"
+                            },
+                            "name": "MyButton8",
+                            "designerId": "8e83e95e-9c53-4afb-88b5-55a6ee41cd6f"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": null,
+                                "itemId": "AddNewEquipment",
+                                "layout|flex": null,
+                                "text": "添加新设备"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "8a82d687-43c7-4c8a-a591-a23a6c54a02e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": null,
+                        "height": 100,
+                        "layout|colspan": 3,
+                        "layout|rowspan": 3,
+                        "src": "images/photo.jpg",
+                        "width": 100
+                    },
+                    "name": "MyImg",
+                    "designerId": "1d4088db-1b3c-4916-9928-d9f82f28cca0"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "名称",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "readOnly": true
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "f85f2555-d4c5-404e-9845-f361e9a288af"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "密码",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "readOnly": true
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "0b36ceb5-f288-4f32-ae18-8cd7450fb0a1"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "readOnly": true
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "09651568-4816-4bb4-9080-02b8cd50e3a7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "readOnly": true
+                    },
+                    "name": "MyTextField7",
+                    "designerId": "233cc0b5-9d70-40ee-a428-d067b560fef2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Email",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "readOnly": true
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "20d444d0-b37d-4e44-bcc6-6e3dacd70ff2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Tel",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "readOnly": true
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "af0636ce-e803-4a96-ad2c-54e3256dfe57"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "title": "用户关联设备"
+            },
+            "name": "MyPanel9",
+            "designerId": "be683263-f683-4947-be87-e39d33f0e04b",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "enableColumnHide": false,
+                        "enableColumnMove": false,
+                        "enableColumnResize": false,
+                        "forceFit": true,
+                        "header": false,
+                        "height": 400,
+                        "manageHeight": false,
+                        "store": "UserEquipmentModels",
+                        "title": null
+                    },
+                    "name": "MyGridPanel2",
+                    "designerId": "89bacb18-574c-484d-bb1a-26ea06c96d41",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView2",
+                            "designerId": "d878ae71-d9a9-41c3-85e4-895c60bd38ee"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id",
+                                "format": "00",
+                                "text": "ID"
+                            },
+                            "name": "MyNumberColumn3",
+                            "designerId": "9dac5686-6c60-4d85-bc5c-6cdc14fdc90a"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "mac",
+                                "text": "My Field"
+                            },
+                            "name": "MyColumn4",
+                            "designerId": "49be9a1c-52cd-4973-8201-2a71cb6d86c4"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "descirption",
+                                "text": "Descirption"
+                            },
+                            "name": "MyColumn6",
+                            "designerId": "3c891f22-337b-45ab-9f8d-0e8b82d722b5"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "type",
+                                "text": "Type"
+                            },
+                            "name": "MyColumn8",
+                            "designerId": "7016c58e-d0e5-4e49-ae5a-fc44788fc9d0"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "more1",
+                                "text": "More1"
+                            },
+                            "name": "MyColumn9",
+                            "designerId": "268d1a4d-2467-4137-8a1a-9d1ed157c733"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "more2",
+                                "text": "More2"
+                            },
+                            "name": "MyColumn10",
+                            "designerId": "e6448f7e-8ff9-49c0-9452-6f1d36d1a8b9"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "more3",
+                                "text": "More3"
+                            },
+                            "name": "MyColumn11",
+                            "designerId": "7968ca13-76ab-46a8-ab08-26d17ba24d37"
+                        },
+                        {
+                            "type": "Ext.selection.RowModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.RowModel",
+                            "name": "MyRowSelectionModel",
+                            "designerId": "95dee944-a95d-404b-a73c-e84cff4802e5"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

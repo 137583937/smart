@@ -1,0 +1,197 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AddNewEquipment",
+        "height": null,
+        "modal": true,
+        "resizable": false,
+        "title": "添加新设备",
+        "width": 484
+    },
+    "name": "MyWindow",
+    "configAlternates": {
+        "resizable": "boolean"
+    },
+    "designerId": "6b7a0173-3f8b-45ac-819a-b97500becd53",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "container|pack": "end",
+                "header": false,
+                "layout": "vbox",
+                "title": "My Form",
+                "url": "AddNewEquipmentAction"
+            },
+            "name": "MyForm1",
+            "designerId": "039b1f2e-167c-4b79-b514-8f53f6431e8a",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "MAC",
+                        "name": "mac",
+                        "width": 300
+                    },
+                    "name": "MyTextField8",
+                    "designerId": "6a2cb23d-c905-499e-964b-5cb9c3306364"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "类型",
+                        "layout|flex": 1,
+                        "name": "type",
+                        "width": 300
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "d7dda6e0-2d7c-48df-908b-5074962b45b7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "描述",
+                        "name": "description",
+                        "width": 300
+                    },
+                    "name": "MyTextField9",
+                    "designerId": "c196123d-7f5b-4abe-bc62-a6c85b53db61"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "厂商",
+                        "width": 300
+                    },
+                    "name": "MyTextField10",
+                    "designerId": "3bdc2a0a-f5ef-428f-9d4f-d95fef2d90e9"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "name": "more",
+                        "width": 300
+                    },
+                    "name": "MyTextField11",
+                    "designerId": "36f77e68-1cd6-43c1-8d65-9d3936afe90f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "name": "more",
+                        "width": 300
+                    },
+                    "name": "MyTextField12",
+                    "designerId": "3ec82c30-41fa-4b70-90b0-0f2514f438c6"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "height": 105,
+                        "name": "more",
+                        "width": 300
+                    },
+                    "name": "MyTextArea",
+                    "designerId": "59290531-398b-4212-a005-69cd4db99662"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "end",
+                        "dock": "bottom",
+                        "layout|flex": 1
+                    },
+                    "name": "MyToolbar3",
+                    "designerId": "bad7089e-c3d6-4da6-a869-0dd097f54bed",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "CanfirmEquipmentAdd",
+                                "layout|flex": null,
+                                "text": "确认"
+                            },
+                            "name": "MyButton12",
+                            "designerId": "dc1418b7-0e2b-468c-b8df-76318599a46c"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "CancenEquipmentAdd",
+                                "layout|flex": null,
+                                "text": "取消"
+                            },
+                            "name": "MyButton13",
+                            "designerId": "5bcdbcbf-6417-4514-a4c7-c1b0023ba0cb"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

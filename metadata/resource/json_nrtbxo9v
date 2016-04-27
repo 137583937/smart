@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_nrtbxo9v",
+        "url": "json/HttpAndSession.asp"
+    },
+    "name": "json2",
+    "designerId": "1d5d07dd-5afb-4b6f-9166-f1ecb8ecbecd"
+}

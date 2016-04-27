@@ -1,0 +1,188 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AddNewUser",
+        "height": 283,
+        "modal": true,
+        "resizable": false,
+        "title": "添加新用户",
+        "width": 354
+    },
+    "name": "AddNewEquipment1",
+    "configAlternates": {
+        "resizable": "boolean"
+    },
+    "designerId": "b2d461cc-fa22-475e-94a5-2d9f938308e3",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": "10 40 10 0",
+                "container|align": "center",
+                "container|pack": "end",
+                "header": false,
+                "layout": "vbox",
+                "title": "My Form",
+                "url": "AddNewUserAction"
+            },
+            "name": "MyForm1",
+            "designerId": "973deae3-e0b4-4caf-af0b-115ec4aeaacd",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "名称",
+                        "labelAlign": "right",
+                        "width": 250
+                    },
+                    "name": "MyTextField8",
+                    "designerId": "146ea328-a2d3-4fbc-bff8-8d6bac3408f7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "密码",
+                        "labelAlign": "right",
+                        "width": 250
+                    },
+                    "name": "MyTextField13",
+                    "designerId": "f701e1e5-b4dd-458f-9ac0-74437b542d20"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Tel",
+                        "labelAlign": "right",
+                        "width": 250
+                    },
+                    "name": "MyTextField9",
+                    "designerId": "e2c4b464-3c3c-4436-9978-3e03416d9856"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowOnlyWhitespace": false,
+                        "fieldLabel": "Email",
+                        "labelAlign": "right",
+                        "width": 250
+                    },
+                    "name": "MyTextField10",
+                    "designerId": "bb436498-57e9-4bdc-a05b-3b1f59c754a2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "家庭代码",
+                        "labelAlign": "right",
+                        "width": 250
+                    },
+                    "name": "MyTextField11",
+                    "designerId": "a170ab94-649b-4fce-87da-82e4602b904d"
+                },
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "buttonMargin": 0,
+                        "buttonText": "选择",
+                        "dock": null,
+                        "fieldLabel": "上传头像",
+                        "labelAlign": "right",
+                        "layout|flex": null,
+                        "width": 250
+                    },
+                    "name": "MyFileUpload",
+                    "designerId": "5e3c0eb0-d48b-428e-84f2-0b01bb67380b"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "end",
+                        "dock": "bottom"
+                    },
+                    "name": "MyToolbar3",
+                    "designerId": "5fd47b8c-ca78-4c4d-ae60-f948cd2b891b",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "formBind": true,
+                                "itemId": "ConfirmUserAdd",
+                                "layout|flex": null,
+                                "text": "确认添加"
+                            },
+                            "name": "MyButton12",
+                            "designerId": "54c74c28-259e-4ec8-b9fa-f24e0a8ebfa9"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "CancenUserAdd",
+                                "layout|flex": null,
+                                "text": "取消添加"
+                            },
+                            "name": "MyButton13",
+                            "designerId": "636759a7-7153-43e6-ad1c-55e98e0901e3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

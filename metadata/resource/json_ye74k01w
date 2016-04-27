@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_ye74k01w",
+        "url": "json/MgrList.asp"
+    },
+    "name": "json2",
+    "designerId": "7a07c486-26df-4ac6-ac84-89ba8ca3f964"
+}

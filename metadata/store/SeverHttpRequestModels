@@ -1,0 +1,47 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": null,
+        "designer|userAlias": "severhttprequestmodels",
+        "designer|userClassName": "SeverHttpRequestModels",
+        "model": "SeverHttpRequestModel",
+        "storeId": "SeverHttpRequestModels"
+    },
+    "designerId": "e60d83c6-8967-4b6d-95d6-68ef8b16e7c8",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "HttpAndSessionAction"
+            },
+            "name": "MyAjaxProxy5",
+            "designerId": "65f2212b-0a7b-4212-ba39-2f27aede1482",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader5",
+                    "designerId": "46efd58a-9d12-49b2-b58c-9b1b380b58ad"
+                }
+            ]
+        }
+    ]
+}

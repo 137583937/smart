@@ -1,0 +1,1302 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Sever",
+        "header": false,
+        "height": 521,
+        "layout": "fit",
+        "title": "服务器运行",
+        "width": 1078
+    },
+    "name": "MyPanel",
+    "designerId": "efffb199-7571-441c-9741-dbce5c9b7cbc",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "height": "100%",
+                "manageHeight": false
+            },
+            "name": "MyTabPanel",
+            "designerId": "5cb9b145-ed57-4993-a989-c7205f20df0e",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": null,
+                        "manageHeight": false,
+                        "title": "服务器信息"
+                    },
+                    "name": "MyPanel1",
+                    "designerId": "f4703697-5bf4-420a-90ac-09f7f80fd5fb",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "closable": false,
+                                "width": 120
+                            },
+                            "name": "TabConfig2",
+                            "designerId": "788b02d4-dfe5-41e8-88ef-90b7c03330bf"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "border": null,
+                                "container|align": "stretch",
+                                "frame": true,
+                                "header": false,
+                                "height": 200,
+                                "itemId": "SeverInfo",
+                                "layout": "hbox",
+                                "manageHeight": false,
+                                "overflowY": "auto",
+                                "title": null
+                            },
+                            "name": "MyForm1",
+                            "designerId": "c083313e-b72f-4645-b27e-d45692dcf758",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": null,
+                                        "container|columns": 3,
+                                        "layout": "table",
+                                        "layout|flex": null,
+                                        "style": null,
+                                        "title": "系统基本信息"
+                                    },
+                                    "name": "MyFieldSet2",
+                                    "designerId": "50e1535f-394e-43a8-acd3-db853fb3c451",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": null,
+                                                "fieldStyle": "color:#006699;font-size:16px;",
+                                                "hideLabel": true,
+                                                "labelAlign": "right",
+                                                "labelStyle": null,
+                                                "style": [
+                                                    "{",
+                                                    "    color;'#006699'",
+                                                    "}"
+                                                ],
+                                                "value": "智慧家居运维客户端系统"
+                                            },
+                                            "name": "MyDisplayField7",
+                                            "designerId": "640aff01-dbee-4ec5-a026-fad648fbdc47"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "系统版本",
+                                                "labelAlign": "right",
+                                                "name": "systemversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField25",
+                                            "designerId": "2aca257f-583b-40ba-8109-f2ed851f1620"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "更新时间",
+                                                "labelAlign": "right",
+                                                "name": "update",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField26",
+                                            "designerId": "19ed037c-3d66-47f9-bd26-036c69d0f4ce"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "JBoss版本",
+                                                "labelAlign": "right",
+                                                "name": "jbossversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField27",
+                                            "designerId": "51251728-d1a7-4ef3-bc3f-04c7f9296d62"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "JDK版本",
+                                                "labelAlign": "right",
+                                                "layout|colspan": 2,
+                                                "name": "jdkversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField24",
+                                            "designerId": "a5e372e6-1c6a-4dae-9073-260872b04ae9"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "操作系统",
+                                                "labelAlign": "right",
+                                                "name": "osversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField17",
+                                            "designerId": "44450212-19b5-4ffb-851c-f3ac43488b23"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "内存容量",
+                                                "labelAlign": "right",
+                                                "name": "memery",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField15",
+                                            "designerId": "763f4b0e-324f-4ff7-b565-174f12da119a"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "硬盘容量",
+                                                "labelAlign": "right",
+                                                "name": "disk",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField29",
+                                            "designerId": "e226aec3-4bed-402f-8e14-0ec70752253d"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "服务器线程数",
+                                                "labelAlign": "right",
+                                                "name": "threads",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField30",
+                                            "designerId": "5d5350eb-d736-48c0-b1dc-398c520032f2"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "服务器节点",
+                                                "labelAlign": "right",
+                                                "name": "clusterbodes",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField28",
+                                            "designerId": "e42437b3-cfbd-4098-8acc-cd387cfd39c0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "column"
+                            },
+                            "name": "MyContainer",
+                            "designerId": "a33adccd-9819-43d5-bf36-491bda48f824",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": null,
+                                        "designer|displayName": "memory",
+                                        "height": "100%",
+                                        "layout|columnWidth": null,
+                                        "manageHeight": false,
+                                        "title": ""
+                                    },
+                                    "name": "MyPanel3",
+                                    "designerId": "b59a366f-e220-483b-9616-0ae94fb86732",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.chart.Chart",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "animate": true,
+                                                "designer|displayName": "Memory",
+                                                "height": 250,
+                                                "insetPadding": 20,
+                                                "store": "SeverMemoryModels",
+                                                "width": 400
+                                            },
+                                            "name": "PieChart",
+                                            "configAlternates": {
+                                                "animate": "boolean"
+                                            },
+                                            "designerId": "9625a142-365c-4076-baaf-8fa4905b154e",
+                                            "isBuiltIn": true,
+                                            "iconCls": "icon-pie-chart",
+                                            "autoName": "PieChart",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.chart.series.Pie",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "angleField": "memory",
+                                                        "donut": 20,
+                                                        "highlight": [
+                                                            "{",
+                                                            "                segment: {",
+                                                            "                    margin: 20",
+                                                            "                }",
+                                                            "            }"
+                                                        ],
+                                                        "label": [
+                                                            "{'field':['name'],'display':'rotate','contrast':true,'font':'12px Arial'}"
+                                                        ],
+                                                        "showInLegend": true
+                                                    },
+                                                    "name": "MyPieSeries",
+                                                    "designerId": "13f06d7b-f9f1-449c-a819-26b612d7aac7"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.Legend",
+                                                    "reference": {
+                                                        "name": "legend",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "position": "left"
+                                                    },
+                                                    "name": "MyLegend",
+                                                    "designerId": "66e68755-7bdf-4dd0-9bbc-046b18b58f21"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|pack": "center",
+                                                "dock": "top"
+                                            },
+                                            "name": "MyToolbar4",
+                                            "designerId": "029a43c8-bb24-49fb-86c2-8397451425d2",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|flex": null,
+                                                        "text": "服务器内存消耗分布："
+                                                    },
+                                                    "name": "MyLabel",
+                                                    "designerId": "b77ec40f-e477-4eaa-ae27-5960f304ff14"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "Http",
+                                        "height": "100%",
+                                        "layout|columnWidth": "",
+                                        "manageHeight": false,
+                                        "title": ""
+                                    },
+                                    "name": "MyPanel17",
+                                    "designerId": "bef28b24-bf3b-4899-adfd-99a374d37444",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.chart.Chart",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "animate": [
+                                                    "true"
+                                                ],
+                                                "designer|displayName": "HttpRequest",
+                                                "height": 250,
+                                                "insetPadding": 20,
+                                                "shadow": false,
+                                                "store": "SeverHttpRequestModels",
+                                                "theme": null,
+                                                "width": 618
+                                            },
+                                            "name": "LineChart",
+                                            "designerId": "374a4a7c-2434-4574-86c2-145cd9822b08",
+                                            "isBuiltIn": true,
+                                            "iconCls": "icon-line-chart",
+                                            "autoName": "LineChart",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.chart.axis.Category",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fields": [
+                                                            "time"
+                                                        ],
+                                                        "title": "Time"
+                                                    },
+                                                    "name": "MyCategoryAxis",
+                                                    "designerId": "eee97f59-23ab-4b44-b3b8-6b60fa36ff36"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.axis.Numeric",
+                                                    "reference": {
+                                                        "name": "axes",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "grid": true,
+                                                        "title": "连接数"
+                                                    },
+                                                    "name": "MyNumericAxis",
+                                                    "configAlternates": {
+                                                        "grid": "boolean"
+                                                    },
+                                                    "designerId": "73c39c28-12d2-421a-bb0c-ffa4a8ac17a5"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.series.Line",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "highlight": [
+                                                            "{",
+                                                            "                size: 7,",
+                                                            "                radius: 7",
+                                                            "            }"
+                                                        ],
+                                                        "smooth": 3,
+                                                        "title": [
+                                                            "Session"
+                                                        ],
+                                                        "xField": "time",
+                                                        "yField": [
+                                                            "Session"
+                                                        ]
+                                                    },
+                                                    "name": "MyLineSeries",
+                                                    "designerId": "0163d9eb-9287-4a9f-aee0-8377bfe24f03"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.series.Line",
+                                                    "reference": {
+                                                        "name": "series",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "highlight": [
+                                                            "{",
+                                                            "                size: 7,",
+                                                            "                radius: 7",
+                                                            "            }"
+                                                        ],
+                                                        "smooth": 3,
+                                                        "style": [
+                                                            "{",
+                                                            "    lineColor:0xFF0033,",
+                                                            "    borderColor:0xFF0033",
+                                                            "}"
+                                                        ],
+                                                        "title": [
+                                                            "HttpRequest"
+                                                        ],
+                                                        "xField": "time",
+                                                        "yField": [
+                                                            "HttpRequest"
+                                                        ]
+                                                    },
+                                                    "name": "MyLineSeries1",
+                                                    "designerId": "73e9d72e-00d7-451d-9370-525861cff2a4"
+                                                },
+                                                {
+                                                    "type": "Ext.chart.Legend",
+                                                    "reference": {
+                                                        "name": "legend",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "name": "MyLegend1",
+                                                    "designerId": "e4de0373-71da-4280-9eef-c955bc49b393"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|pack": "center",
+                                                "dock": "top"
+                                            },
+                                            "name": "MyToolbar5",
+                                            "designerId": "8cb5364f-c839-46f3-84d8-be4d5b509673",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|flex": null,
+                                                        "text": "服务器Http请求和Session连接"
+                                                    },
+                                                    "name": "MyLabel1",
+                                                    "designerId": "155d3748-ee29-4894-ac1a-a7a97e78657d"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "manageHeight": false,
+                        "title": "集群运行"
+                    },
+                    "name": "MyPanel2",
+                    "designerId": "7321930e-69ef-45f1-b471-6a75008be7e0",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "closable": false,
+                                "width": 120
+                            },
+                            "name": "TabConfig2",
+                            "designerId": "aa8dd761-985c-4027-ba60-ed1911c84870"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "border": null,
+                                "container|align": "stretch",
+                                "frame": true,
+                                "header": false,
+                                "height": 200,
+                                "itemId": "SeverClusterInfo",
+                                "layout": "hbox",
+                                "manageHeight": false,
+                                "overflowY": "auto",
+                                "title": null,
+                                "url": "SeverClusterInfoAction"
+                            },
+                            "name": "MyForm2",
+                            "designerId": "653026b7-075e-4260-a2fc-5c74c79b5124",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": null,
+                                        "container|columns": 3,
+                                        "layout": "table",
+                                        "layout|flex": null,
+                                        "style": null,
+                                        "title": "集群描述"
+                                    },
+                                    "name": "MyFieldSet2",
+                                    "designerId": "746a6746-daf6-4ab4-aacf-c4197502422d",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "集群节点",
+                                                "fieldStyle": null,
+                                                "labelAlign": "right",
+                                                "labelStyle": null,
+                                                "style": null,
+                                                "value": null
+                                            },
+                                            "name": "MyDisplayField7",
+                                            "designerId": "916b30ec-56e7-485a-b8c6-17c02efeaf74"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "均衡器",
+                                                "labelAlign": "right",
+                                                "name": "systemversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField25",
+                                            "designerId": "61b08357-e6aa-4115-b9e8-6b253e1a6355"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "占比",
+                                                "labelAlign": "right",
+                                                "name": "update",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField26",
+                                            "designerId": "fab31717-29b8-46c8-963e-daf39b8a9cf0"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "A节点",
+                                                "labelAlign": "right",
+                                                "name": "jbossversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField27",
+                                            "designerId": "0fd2f9d8-b5ea-4a5c-a913-e30b13239692"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "B节点",
+                                                "labelAlign": "right",
+                                                "layout|colspan": null,
+                                                "name": "jdkversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField24",
+                                            "designerId": "d303a9b0-d821-4f90-acb0-fa887fc790be"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "C节点",
+                                                "labelAlign": "right",
+                                                "name": "osversion",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField17",
+                                            "designerId": "9cefc1f9-c7df-4bfe-a905-9c52ac31f1d1"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "D节点",
+                                                "labelAlign": "right",
+                                                "name": "memery",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField15",
+                                            "designerId": "39baebd1-8d57-44ca-812d-afcfb43b310f"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Display",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "F节点",
+                                                "labelAlign": "right",
+                                                "name": "disk",
+                                                "value": "Display Field"
+                                            },
+                                            "name": "MyDisplayField29",
+                                            "designerId": "23b5db9e-963f-4e4b-9100-107812ef73a9"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "Cluster",
+                                "header": false,
+                                "title": "My Panel"
+                            },
+                            "name": "MyPanel5",
+                            "designerId": "298a3440-8a04-4506-a59f-5eb4d87bc369",
+                            "cn": [
+                                {
+                                    "type": "Ext.chart.Chart",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "animate": [
+                                            "true"
+                                        ],
+                                        "designer|displayName": "ClusterChart",
+                                        "height": 250,
+                                        "insetPadding": 20,
+                                        "store": "SeverClusterModels",
+                                        "theme": "Category2",
+                                        "width": 400
+                                    },
+                                    "name": "RadarChart",
+                                    "designerId": "361b3bd8-a2ae-4e95-8ed6-2e0f0c76f0e1",
+                                    "isBuiltIn": true,
+                                    "iconCls": "icon-radar-chart",
+                                    "autoName": "RadarChart",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.chart.axis.Radial",
+                                            "reference": {
+                                                "name": "axes",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dashSize": null,
+                                                "steps": 4,
+                                                "title": null,
+                                                "width": null
+                                            },
+                                            "name": "MyRadialAxis",
+                                            "designerId": "aee98311-2013-4429-86a3-7edc81b88f28"
+                                        },
+                                        {
+                                            "type": "Ext.chart.series.Radar",
+                                            "reference": {
+                                                "name": "series",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "highlight": [
+                                                    "{",
+                                                    "                                                        size: 7,",
+                                                    "                                                        radius: 7",
+                                                    "                                                    }"
+                                                ],
+                                                "showInLegend": true,
+                                                "showMarkers": true,
+                                                "style": [
+                                                    "{'opacity':0.4}"
+                                                ],
+                                                "title": "集群节点",
+                                                "xField": "id",
+                                                "yField": "business"
+                                            },
+                                            "name": "MyRadarSeries",
+                                            "designerId": "12e5a616-a553-4b25-93df-989faebd56da"
+                                        },
+                                        {
+                                            "type": "Ext.chart.Legend",
+                                            "reference": {
+                                                "name": "legend",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "position": "left"
+                                            },
+                                            "name": "MyLegend2",
+                                            "designerId": "da6ea357-f401-4bad-9272-4215634d9701"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|pack": "center",
+                                        "dock": "top"
+                                    },
+                                    "name": "MyToolbar6",
+                                    "designerId": "da1e5d85-8fa4-4805-b17e-cf5562a949e0",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "集群节点消耗分布"
+                                            },
+                                            "name": "MyLabel2",
+                                            "designerId": "0151880a-2f43-4673-bdde-18a7f2b8a8ea"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "manageHeight": false,
+                        "padding": null,
+                        "title": "运行日志"
+                    },
+                    "name": "MyPanel14",
+                    "designerId": "4113db11-1b9b-4372-9ab5-d52751105c62",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120
+                            },
+                            "name": "TabConfig",
+                            "designerId": "b44d030b-9f2c-4862-8cc0-a95fabf87dc0"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": "1 solid #FF0000",
+                                "dock": "bottom"
+                            },
+                            "name": "MyToolbar",
+                            "designerId": "58400c2a-a6ef-48b2-b203-bd456c98ecc4",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "开启接收",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "ee8e7d4b-9b1e-4dd7-bdd9-da539a36d37c"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "停止接收",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "a9e056ae-fc54-4302-b368-c8e7e938c552"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "清除",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton8",
+                                    "designerId": "57fd0e72-cd31-4814-ae6b-102aa6ed2b9a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.view.View",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "100%",
+                                "id": "RuningLog",
+                                "itemSelector": "div",
+                                "overflowY": "auto",
+                                "padding": "0 4",
+                                "store": "SeverRuningLogs"
+                            },
+                            "name": "MyView",
+                            "designerId": "5172dec3-90d4-49a9-9271-1a97ab4400f8",
+                            "cn": [
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "itemTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "itemTpl",
+                                        "implHandler": [
+                                            "<span style='color:#3333cc'>{time}:{title}</span></br>【info】:{description}</br>--"
+                                        ]
+                                    },
+                                    "name": "itemTpl",
+                                    "designerId": "166142e9-adf6-4e81-9a5f-a2db8e783112"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "manageHeight": false,
+                        "title": "Out输出"
+                    },
+                    "name": "MyPanel15",
+                    "designerId": "b91f9739-8a1c-4777-bc3b-c308e77f1555",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120
+                            },
+                            "name": "TabConfig1",
+                            "designerId": "6f30d816-d389-4eec-8eb4-ced8d43df906"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": "1 solid #FF0000",
+                                "dock": "bottom"
+                            },
+                            "name": "MyToolbar2",
+                            "designerId": "31618d21-003f-4f79-a4b9-3a51a5b5b6f3",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "开启接收",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "fdd9ca18-bfb5-4da1-ae77-e1363a4cb8e7"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "停止接收",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "4799d904-5843-4067-888c-f11c19401d19"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "清除",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton8",
+                                    "designerId": "06abf901-59a9-48bf-9394-24f879aa8610"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.view.View",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "100%",
+                                "id": "RuningLog2",
+                                "itemSelector": "div",
+                                "overflowY": "auto",
+                                "padding": "0 4",
+                                "store": "SeverOutLog"
+                            },
+                            "name": "MyView2",
+                            "designerId": "6051bd88-7406-4c8a-b1df-9c66ec42df42",
+                            "cn": [
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "itemTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "itemTpl",
+                                        "implHandler": [
+                                            "<span style='color:#00cc00'>{time}:{title}</span></br>【Out-info】:{description}</br>--"
+                                        ]
+                                    },
+                                    "name": "itemTpl",
+                                    "designerId": "0642b9db-3818-4537-9f14-b5a9b822b401"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "manageHeight": false,
+                        "title": "Error输出"
+                    },
+                    "name": "MyPanel16",
+                    "designerId": "59b558d0-8169-45ed-a8b8-9791b70632d2",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "closable": false,
+                                "width": 120
+                            },
+                            "name": "TabConfig2",
+                            "designerId": "7ae077e2-42bc-415b-b060-4ffa390f87e6"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": "1 solid #FF0000",
+                                "dock": "bottom"
+                            },
+                            "name": "MyToolbar1",
+                            "designerId": "98d6428a-bd7a-4210-916c-3f662d4b3d9a",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "开启接收",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "1bc9ee06-058b-4975-b69e-64d9bfa51f18"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "停止接收",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "5f2bfd8c-c057-4aa0-96da-4aecff4b9f1a"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "清除",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton8",
+                                    "designerId": "7c45648c-8c27-4435-843a-f2b4c20facfb"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.view.View",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "100%",
+                                "id": "RuningLog1",
+                                "itemSelector": "div",
+                                "overflowY": "auto",
+                                "padding": "0 4",
+                                "store": "SeverErrorLog"
+                            },
+                            "name": "MyView1",
+                            "designerId": "122b50d2-76d3-4f6b-9418-86870764e4ef",
+                            "cn": [
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "itemTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "itemTpl",
+                                        "implHandler": [
+                                            "<span style='color:#ff0000'>{time}:{title}</span></br>【Error-info】:{description}</br>--"
+                                        ]
+                                    },
+                                    "name": "itemTpl",
+                                    "designerId": "1b90ef23-1ee1-47bc-8417-d8edb2caeefd"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,227 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Mgr.List",
+        "frameHeader": false,
+        "header": false,
+        "height": 510,
+        "modal": true,
+        "title": "管理员列表",
+        "width": 702
+    },
+    "name": "MyWindow",
+    "designerId": "fab7bddf-47de-4cb1-9b49-ab5123c3262d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnLines": false,
+                "enableColumnHide": false,
+                "enableColumnMove": false,
+                "enableColumnResize": false,
+                "forceFit": true,
+                "sortableColumns": false,
+                "store": "MgrLists",
+                "title": "所有管理元列表"
+            },
+            "name": "MyGridPanel1",
+            "designerId": "b8b154f3-850d-4ab0-9de1-f8cb8aa1fbaa",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "序号",
+                        "width": 47
+                    },
+                    "name": "MyRowNumberer",
+                    "designerId": "8ea40f2e-48ea-448e-861b-6440b9811a51"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView1",
+                    "designerId": "46da538a-c89b-47f0-af2b-5c7601f389e3"
+                },
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "AddMgr",
+                        "type": "plus"
+                    },
+                    "name": "MyTool1",
+                    "designerId": "18f61498-6f79-4c57-9152-5e109d1f6638",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onAddMgrClick",
+                                "implHandler": [
+                                    "//添加新的管理员",
+                                    "var addmgr=Ext.create('smart.view.Mgr.AddAndEdit');",
+                                    "addmgr.show();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onAddMgrClick",
+                            "designerId": "4e0e32a6-fca9-40e4-b470-d25307ab1448"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "type": "close"
+                    },
+                    "name": "MyTool2",
+                    "designerId": "1dad1b17-2d26-49dc-9898-4f128b3ddece",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onToolClick",
+                                "implHandler": [
+                                    "//关闭按钮",
+                                    "tool.up('window').destroy();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onToolClick",
+                            "designerId": "a93afd34-add0-4e63-9045-91010d56e23c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "num",
+                        "format": "00",
+                        "text": "编号",
+                        "width": 66
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "2351c759-a8e5-44f3-960f-2cb5fae1f722"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "text": "ID",
+                        "width": 62
+                    },
+                    "name": "MyColumn",
+                    "designerId": "baa2ac74-832f-4c75-a165-ed81d6d0700e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "name",
+                        "text": "姓名",
+                        "width": 86
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "cc2a265f-3063-4a6b-ade7-a7af178c72fa"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "type",
+                        "text": "权限",
+                        "width": 88
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "bc95f0b5-8fc5-4e26-9281-b152966b4bbf"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "lastip",
+                        "text": "上次登录IP"
+                    },
+                    "name": "MyColumn8",
+                    "designerId": "d05dfe1e-8776-4370-8d2d-b2b1531e453d"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "updatetime",
+                        "format": "d-m-Y",
+                        "text": "上次登录时间"
+                    },
+                    "name": "MyDateColumn",
+                    "designerId": "74d9356e-1613-43ae-82ed-1bfd54868e74"
+                }
+            ]
+        }
+    ]
+}

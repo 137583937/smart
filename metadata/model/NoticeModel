@@ -1,0 +1,76 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "noticemodel",
+        "designer|userClassName": "NoticeModel"
+    },
+    "name": "MyModel",
+    "designerId": "466000f4-5db0-41f0-8f38-4133ecd541cf",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": null,
+                "name": "id",
+                "type": "int"
+            },
+            "name": "MyField1",
+            "designerId": "e683aad0-3b0c-4bd7-911d-54627dac56c0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": null,
+                "name": "type",
+                "type": "string"
+            },
+            "name": "MyField",
+            "designerId": "37184192-1a6d-4cc6-92ef-48d5bb847951"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": null,
+                "name": "date",
+                "type": "date"
+            },
+            "name": "MyField3",
+            "designerId": "86495922-5ffd-4bca-b0b2-4befdfbbcdf1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": null,
+                "name": "title",
+                "type": "string"
+            },
+            "name": "MyField2",
+            "designerId": "258737c4-d849-4600-a33e-322e0d98ff95"
+        }
+    ]
+}

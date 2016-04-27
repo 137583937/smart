@@ -1,0 +1,327 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainView",
+        "id": "MainView",
+        "itemId": "mainView",
+        "layout": "border",
+        "style": [
+            "{",
+            "    'background':'#ccddee'",
+            "}"
+        ]
+    },
+    "designerId": "a705110d-4ce3-4545-a748-7f920677364e",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 100,
+                "html": [
+                    "",
+                    "<div style='margin:0 auto;width:1003px;color:#006699;'>",
+                    "<h1>智慧家居运维客户端</h1>",
+                    "<p>Name属性使用小写，例如mainview，ID属性使用首字母大写，例如MainView</p>",
+                    "<div>",
+                    ""
+                ],
+                "itemId": "headerPanel",
+                "layout": "fit",
+                "layout|region": "north",
+                "minWidth": 1003,
+                "title": null
+            },
+            "name": "MyPanel1",
+            "designerId": "a67ef7eb-1c7b-4f8d-ab53-848448de9b61"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyBorder": null,
+                "border": null,
+                "collapseDirection": "left",
+                "collapsible": true,
+                "itemId": "menuPanel",
+                "layout": "fit",
+                "layout|region": "west",
+                "layout|split": true,
+                "layout|splitterResize": false,
+                "title": "功能",
+                "width": 180
+            },
+            "name": "MyPanel2",
+            "designerId": "d83eb7c4-d001-4a6f-ac40-06b1a7603968",
+            "cn": [
+                {
+                    "type": "Ext.menu.Menu",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "floating": false,
+                        "height": null,
+                        "itemId": "sideMenu",
+                        "manageHeight": false,
+                        "width": null
+                    },
+                    "name": "MyMenu",
+                    "designerId": "d98ae1fc-6d78-4977-b341-388596148fff",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": null,
+                                "cls": "itemborder",
+                                "designer|displayName": "",
+                                "dock": null,
+                                "glyph": null,
+                                "height": 40,
+                                "hideOnClick": false,
+                                "id": "First",
+                                "items": null,
+                                "margin": 1,
+                                "plain": null,
+                                "text": "首页"
+                            },
+                            "name": "MyMenuItem",
+                            "configAlternates": {
+                                "items": "array"
+                            },
+                            "designerId": "c7cf3838-58ce-406f-af5e-ae3fabe6644d",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "items",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "itemborder",
+                                "height": 40,
+                                "id": "UserMgr",
+                                "margin": 1,
+                                "text": "用户管理"
+                            },
+                            "name": "MyMenuItem1",
+                            "designerId": "00fce188-8b56-4537-82c1-ea1761a7f23e"
+                        },
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "itemborder",
+                                "height": 40,
+                                "id": "EquipmentMgr",
+                                "margin": 1,
+                                "text": "设备管理"
+                            },
+                            "name": "MyMenuItem2",
+                            "designerId": "343fc833-a565-4802-b83e-c11e6addaff9"
+                        },
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "itemborder",
+                                "height": 40,
+                                "id": "SeverMgr",
+                                "margin": 1,
+                                "text": "服务器管理"
+                            },
+                            "name": "MyMenuItem3",
+                            "designerId": "eb681906-198c-4586-b215-08605beb4175"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "id": "Quit",
+                        "margin": 10,
+                        "padding": 10,
+                        "text": "退出"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "544a2b95-4fe7-4977-aa9d-28f2e6d3ae0d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disabled": null,
+                "id": "Content",
+                "itemId": "contentPanel",
+                "layout": "card",
+                "layout|region": "center",
+                "minWidth": 800,
+                "title": null
+            },
+            "name": "MyPanel3",
+            "designerId": "1dee8cbe-803f-4a6b-b12d-1233d98567a6",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "F",
+                        "items": [
+                            "[Ext.create('smart.view.First')]"
+                        ],
+                        "layout": "fit",
+                        "title": null
+                    },
+                    "name": "MyPanel",
+                    "configAlternates": {
+                        "items": "array"
+                    },
+                    "designerId": "673f5bce-7414-428b-93a2-6649eef0dd6a",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "items",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "S",
+                        "items": [
+                            "[Ext.create('smart.view.User')]"
+                        ],
+                        "layout": "fit",
+                        "title": null
+                    },
+                    "name": "MyPanel4",
+                    "configAlternates": {
+                        "items": "array"
+                    },
+                    "designerId": "aadc0805-ae67-4a4c-95cf-b4d22273c9ea",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "items",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "T",
+                        "items": [
+                            "[Ext.create('smart.view.Equipment')]"
+                        ],
+                        "layout": "fit",
+                        "title": null
+                    },
+                    "name": "MyPanel5",
+                    "configAlternates": {
+                        "items": "array"
+                    },
+                    "designerId": "dd1f66a1-0296-4365-8162-e65442e2d0ab",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "items",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "Fr",
+                        "items": [
+                            "[Ext.create('smart.view.Sever')]"
+                        ],
+                        "layout": "fit",
+                        "title": null
+                    },
+                    "name": "MyPanel6",
+                    "configAlternates": {
+                        "items": "array"
+                    },
+                    "designerId": "7d327e90-514b-443d-aa71-92fd5bc61414",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "items",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "closable": false,
+        "designer|initialView": true,
+        "designer|userClassName": "Login",
+        "height": 316,
+        "id": "LoginWindow",
+        "layout": "fit",
+        "padding": "",
+        "title": "登录",
+        "width": 585
+    },
+    "name": "MyWindow",
+    "designerId": "3b97b49e-0aad-4777-b750-1023234c8350",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "container|pack": "center",
+                "header": false,
+                "itemId": "myform",
+                "layout": "vbox",
+                "method": null,
+                "title": "My Form",
+                "url": "json/form.asp",
+                "waitMsgTarget": [
+                    "true"
+                ],
+                "waitTitle": "登录中...."
+            },
+            "name": "MyForm",
+            "designerId": "b8c8d202-2b4b-4658-8667-331470988823",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "请输入你的ID",
+                        "emptyText": "Your ID",
+                        "fieldLabel": "帐 号",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "layout|margins": "10",
+                        "width": ""
+                    },
+                    "name": "MyTextField",
+                    "designerId": "6da16ad7-cda4-4d31-a86e-163052b36f4b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "请输入你的密码",
+                        "emptyText": "Your Password",
+                        "fieldLabel": "密 码",
+                        "labelAlign": "right",
+                        "labelWidth": 50
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "48dcb887-d3e4-4e36-8b51-1f240414ed30"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "formBind": true,
+                        "height": 34,
+                        "id": "LoginBtn",
+                        "layout|margins": "10",
+                        "text": "登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录",
+                        "width": 150
+                    },
+                    "name": "MyButton",
+                    "designerId": "0a8b3445-4921-4be1-a46e-06cc4ba21bd9"
+                }
+            ]
+        }
+    ]
+}

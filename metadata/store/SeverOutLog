@@ -1,0 +1,47 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": null,
+        "designer|userClassName": "SeverOutLog",
+        "model": "SeverRuningLog",
+        "storeId": "SeverOutLog"
+    },
+    "name": "MyStore1",
+    "designerId": "9b8416e9-3b98-4e4d-b3bb-b1085fd1ed19",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "SeverOutAction"
+            },
+            "name": "MyAjaxProxy7",
+            "designerId": "069c77a5-96d7-4754-8387-25a380c6f84c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader7",
+                    "designerId": "0a46d071-b59d-431b-8bf5-da5944c4165b"
+                }
+            ]
+        }
+    ]
+}
