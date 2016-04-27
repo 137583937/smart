@@ -1,0 +1,47 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": null,
+        "designer|userAlias": "mgrlists",
+        "designer|userClassName": "MgrLists",
+        "model": "MgrList",
+        "storeId": "MgrLists"
+    },
+    "designerId": "9199138a-4b2e-463a-aaf8-6c64fb4afa32",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "MgrListAction"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "d8a84212-6a1f-4f7d-8fb5-68a37830c93a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "eee65454-dc75-457a-92fd-f08887a847a2"
+                }
+            ]
+        }
+    ]
+}

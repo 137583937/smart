@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_rp3uvue9",
+        "url": "json/Memory.asp"
+    },
+    "name": "json2",
+    "designerId": "1bcd9fe8-c322-4b1a-b0bc-5f07ea9ea9cf"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_g3ehs6z1",
+        "url": "json/MgrInfo.asp"
+    },
+    "name": "json2",
+    "designerId": "e54351c5-737d-4581-83bd-ef0a4b1edf99"
+}

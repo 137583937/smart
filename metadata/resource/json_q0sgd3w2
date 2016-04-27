@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_q0sgd3w2",
+        "url": "json/SeverOut.asp"
+    },
+    "name": "json2",
+    "designerId": "c233e7b7-9259-4c86-b0f6-3715996a0e69"
+}

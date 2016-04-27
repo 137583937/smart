@@ -1,0 +1,43 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "severmemorymodel",
+        "designer|userClassName": "SeverMemoryModel"
+    },
+    "name": "MyModel1",
+    "designerId": "193ab3b2-3eee-4446-bc2a-802247412d0c",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "MyField28",
+            "designerId": "27969ca5-36cc-4950-a9ee-f8dca262dd48"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "memory",
+                "type": "int"
+            },
+            "name": "MyField29",
+            "designerId": "bf081c2b-37c6-4d69-a0ef-836e14797c18"
+        }
+    ]
+}

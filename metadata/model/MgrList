@@ -1,0 +1,100 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mgrlist",
+        "designer|userClassName": "MgrList"
+    },
+    "designerId": "aefd3162-3bc3-47ae-8361-931a68118cc3",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "num",
+                "type": "int"
+            },
+            "name": "MyField4",
+            "designerId": "22281ec2-4de2-4a73-80b9-fe3506c723bc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "name": "MyField5",
+            "designerId": "bdf3fffd-0cbd-43b0-b855-99fafd41d1d8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "auto"
+            },
+            "name": "MyField6",
+            "designerId": "9ac81775-e08f-46a7-a24c-ee179a675ad5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type",
+                "type": "auto"
+            },
+            "name": "MyField7",
+            "designerId": "78ba35ab-a0bf-4d34-a3a5-71288a0cd52e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastip",
+                "type": "auto"
+            },
+            "name": "MyField8",
+            "designerId": "f12fa75d-0ba0-49fa-b354-baf83e0741eb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": null,
+                "name": "updatetime",
+                "type": "date"
+            },
+            "name": "MyField9",
+            "designerId": "f5979be8-6036-4ea0-b310-e6608f083ecd"
+        }
+    ]
+}

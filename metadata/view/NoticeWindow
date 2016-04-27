@@ -1,0 +1,110 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userClassName": "NoticeWindow",
+        "height": 500,
+        "id": "NoticeWindow",
+        "layout": "border",
+        "modal": true,
+        "resizable": false,
+        "title": "通知详情",
+        "width": 700
+    },
+    "name": "MyWindow",
+    "configAlternates": {
+        "resizable": "boolean"
+    },
+    "designerId": "854f13eb-72ab-4620-9f55-f240e771db1b",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "dock": "bottom",
+                "layout|region": null
+            },
+            "name": "MyToolbar",
+            "designerId": "2da5e4e8-a123-48e3-b184-084d8ade4207",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": "2px solid #006699",
+                        "itemId": "NoticeQuit",
+                        "layout|flex": null,
+                        "layout|margins": "10 0",
+                        "text": "关闭",
+                        "width": 100
+                    },
+                    "name": "MyButton2",
+                    "designerId": "822e3cc4-1f44-468f-b9d2-86addf5c1bc3"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "data": [
+                    "{",
+                    "    'title':'我是小标题',",
+                    "    'content':'没有文本内容',",
+                    "    'time':'2012-2-2'",
+                    "",
+                    "}"
+                ],
+                "header": false,
+                "headerPosition": null,
+                "height": "100%",
+                "id": "NoticeTitle",
+                "layout|region": "north",
+                "manageHeight": false,
+                "overlapHeader": false,
+                "title": "My Panel",
+                "titleAlign": "center"
+            },
+            "name": "MyPanel7",
+            "designerId": "5d994342-be92-4564-a5e5-f8ef02ba79f1",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "tpl",
+                        "implHandler": [
+                            "<h3 style='width:100%;text-align:center'>{title}</h3>",
+                            "<div style='padding:10px;'>{content}</div>",
+                            "<div style='width:100%;text-align:right;color:#006699'>{time}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>"
+                        ]
+                    },
+                    "name": "tpl",
+                    "designerId": "45ab9a31-e75e-4b2d-b458-237cbb8c31e8"
+                }
+            ]
+        }
+    ]
+}

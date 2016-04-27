@@ -1,0 +1,73 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"id\": 280,",
+            "        \"name\": \"veritatis\"",
+            "    },",
+            "    {",
+            "        \"id\": 14,",
+            "        \"name\": \"alias\"",
+            "    },",
+            "    {",
+            "        \"id\": 477,",
+            "        \"name\": \"amet\"",
+            "    },",
+            "    {",
+            "        \"id\": 589,",
+            "        \"name\": \"id\"",
+            "    },",
+            "    {",
+            "        \"id\": 577,",
+            "        \"name\": \"laudantium\"",
+            "    },",
+            "    {",
+            "        \"id\": 693,",
+            "        \"name\": \"quibusdam\"",
+            "    }",
+            "]"
+        ],
+        "designer|userAlias": "equipmentwithusers",
+        "designer|userClassName": "EquipmentWithUsers",
+        "model": "EquipmentWithUser",
+        "storeId": "EquipmentWithUsers"
+    },
+    "designerId": "d2030e31-1832-4635-91c1-fe57a5530f91",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "EquipmentUserAction"
+            },
+            "name": "MyAjaxProxy10",
+            "designerId": "9ec1fb1f-113e-4f7e-be13-333ffebadd17",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader10",
+                    "designerId": "25f30f50-961d-4d47-b06a-d66408cb450b"
+                }
+            ]
+        }
+    ]
+}

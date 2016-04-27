@@ -1,0 +1,300 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FirstController"
+    },
+    "name": "MyController",
+    "designerId": "02bd4713-62f3-4d0a-926b-1c404d627bff",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mybutton3",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onquitClick",
+                "implHandler": [
+                    "Ext.getCmp('NoticeWindow').destroy();"
+                ],
+                "name": "click"
+            },
+            "name": "onquitClick",
+            "designerId": "6821543c-a475-4d1f-8796-36f204186ff4"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#NoticeQuit",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onNoticeQuitClick",
+                "implHandler": [
+                    "button.up('window').destroy();"
+                ],
+                "name": "click"
+            },
+            "name": "onNoticeQuitClick",
+            "designerId": "fb81a64f-81c3-47c8-83b4-cd0b0a2d4d7b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#NoticeGrid",
+                "designer|params": [
+                    "dataview",
+                    "record",
+                    "item",
+                    "index",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.grid.Panel",
+                "fn": "onNoticeGridItemDblClick",
+                "implHandler": [
+                    "var notice=Ext.create('smart.view.NoticeWindow');",
+                    "",
+                    "//获取新闻的详细内容",
+                    "var content='Error 404';",
+                    "Ext.Ajax.request({",
+                    "    url: 'NoticeDetailAction',",
+                    "    params: {",
+                    "        //根据上传通知的ID获取通知的详细内容",
+                    "        id: record.get('id')",
+                    "    },",
+                    "    success: function(response){",
+                    "        content = response.responseText;",
+                    "        notice.show();",
+                    "        notice.queryById('NoticeTitle').update({",
+                    "        'title':record.get('title'),",
+                    "        'content':content,",
+                    "        'time':record.get('date')",
+                    "        });",
+                    "",
+                    "    },",
+                    "    failure: function(response, opts) {",
+                    "        console.log('server-side failure with status code ' + response.status);",
+                    "    }",
+                    "});",
+                    ""
+                ],
+                "name": "itemdblclick"
+            },
+            "name": "onNoticeGridItemDblClick",
+            "designerId": "35ce6bd7-31e2-4b9a-954b-541b77f1c3c3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#SubmitAddNews",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onSubmitAddNewsClick",
+                "implHandler": [
+                    "   //--获取表单",
+                    "        var sform=button.up('form').getForm();",
+                    "    //--添加news",
+                    "     sform.submit({",
+                    "                            success: function(sform, action) {",
+                    "                              Ext.Msg.alert('Success','添加成功');",
+                    "                              button.up('window').destroy();",
+                    "                            },",
+                    "                            failure: function(sform, action) {",
+                    "                                Ext.Msg.alert('Failed','添加失败');",
+                    "                            }",
+                    "                        });",
+                    ""
+                ],
+                "name": "click"
+            },
+            "name": "onSubmitAddNewsClick",
+            "designerId": "e2974e88-d5d1-40ba-82e6-7097551e0981"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#QuitAddNews",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onQuitAddNewsClick",
+                "implHandler": [
+                    " button.up('window').destroy();"
+                ],
+                "name": "click"
+            },
+            "name": "onQuitAddNewsClick",
+            "designerId": "a0eddd4f-df25-47c3-9717-ffab35c05732"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#AddNewsbtn",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onAddNewsbtnClick",
+                "implHandler": [
+                    "Ext.create('smart.view.AddNews').show();"
+                ],
+                "name": "click"
+            },
+            "name": "onAddNewsbtnClick",
+            "designerId": "3073ddbc-239a-4f6d-bed3-4f1e4b1b3243"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#EditeMgrInfo",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onEditeMgrInfoClick",
+                "implHandler": [
+                    "//获取已有信息",
+                    "var form=button.up('form').getForm();",
+                    "var d=form.getValues(false,false,false,true);",
+                    "",
+                    "//编辑管理员信息",
+                    "var edit=Ext.create('smart.view.Mgr.AddAndEdit');",
+                    "",
+                    "edit.down('form').getForm().setValues(d);",
+                    "edit.show();",
+                    "edit.setTitle('更改个人信息');"
+                ],
+                "name": "click"
+            },
+            "name": "onEditeMgrInfoClick",
+            "designerId": "8912a358-ed30-458b-b9f9-8ec6a4188d9e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#ListMgrs",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onListMgrsClick",
+                "implHandler": [
+                    "var list=Ext.create('smart.view.Mgr.List');",
+                    "list.show();"
+                ],
+                "name": "click"
+            },
+            "name": "onListMgrsClick",
+            "designerId": "79a71916-05b5-4426-9b83-1dc58afb601d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#MgrFrom",
+                "designer|params": [
+                    "component",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.form.Panel",
+                "fn": "onMgrFromBeforeRender",
+                "implHandler": [
+                    "console.log(component);",
+                    "//获取管理员的个人信息",
+                    " Ext.Ajax.request({",
+                    "            url: 'MgrInfoAction',",
+                    "            params: {",
+                    "",
+                    "            },",
+                    "            success: function(response){",
+                    "                content = response.responseText;",
+                    "",
+                    "                //接收到的数据转化成Data对象，送给Form",
+                    "",
+                    "                var datejson=Ext.JSON.decode(content);",
+                    "                console.log(datejson);",
+                    "                component.getForm().setValues(datejson);",
+                    "",
+                    "            },",
+                    "            failure: function(response, opts) {",
+                    "                console.log('server-side failure with status code ' + response.status);",
+                    "            }",
+                    "        });",
+                    ""
+                ],
+                "name": "beforerender"
+            },
+            "name": "onMgrFromBeforeRender",
+            "designerId": "980ad130-16ce-4357-9be4-cfeebbb37839"
+        }
+    ]
+}

@@ -1,0 +1,458 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Equipment",
+        "height": null,
+        "layout": "anchor",
+        "manageHeight": false,
+        "title": "用户设备详细信息",
+        "width": 790
+    },
+    "name": "MyPanel2",
+    "designerId": "db4a20a2-9dd6-4c40-b61e-8e9b09076147",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 187,
+                "itemId": "Equipment",
+                "layout": "column",
+                "layout|anchor": "0 30%",
+                "manageHeight": false,
+                "padding": "10 0 0 10",
+                "title": ""
+            },
+            "name": "MyForm2",
+            "designerId": "ae099296-274e-4aed-b5eb-12a412d05d89",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "left"
+                    },
+                    "name": "MyToolbar2",
+                    "designerId": "72e734d1-2408-4421-b271-3ab482eed4a2",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "AddEquipment",
+                                "layout|flex": null,
+                                "text": "添加新设备"
+                            },
+                            "name": "MyButton5",
+                            "designerId": "70171a8c-2523-4fac-b8fc-b7f123bc4ca2"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "DeleteEquipment",
+                                "layout|flex": null,
+                                "text": "删除选中设备"
+                            },
+                            "name": "MyButton9",
+                            "designerId": "1a7af7d6-c093-4241-84cf-863d182f1f3d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|columns": 3,
+                        "height": 163,
+                        "layout": "table",
+                        "title": "系统设备详情"
+                    },
+                    "name": "MyFieldSet3",
+                    "designerId": "715b3ac5-59f0-4252-ad5e-3962765ee99e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "设备总数",
+                                "labelPad": null,
+                                "labelStyle": "color:#000099",
+                                "labelWidth": 80,
+                                "layout|colspan": 3,
+                                "name": "equipmentsum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField14",
+                            "designerId": "50460506-0227-489b-add8-0ea4ff0ffa3b"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "空调",
+                                "labelPad": null,
+                                "labelStyle": "color:#116655",
+                                "labelWidth": 80,
+                                "name": "containersum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField16",
+                            "designerId": "3ec43764-1efe-48c0-abcd-c250accbbcfe"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "灯光",
+                                "labelPad": null,
+                                "labelStyle": "color:#884466",
+                                "labelWidth": 80,
+                                "name": "lightsum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField20",
+                            "designerId": "510307c4-e666-4bd5-b4f1-43e637bad5a5"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "加湿器",
+                                "labelPad": null,
+                                "labelStyle": "color:#114400",
+                                "labelWidth": 80,
+                                "name": "humidifiersum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField18",
+                            "designerId": "43b5908f-7788-4005-a52d-0bc959bf22da"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "仪表类",
+                                "labelPad": null,
+                                "labelStyle": "color:#001199",
+                                "labelWidth": 80,
+                                "name": "instrumentsum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField21",
+                            "designerId": "16ef59e8-9dff-40bf-8484-045abdac3a52"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "传感类",
+                                "labelPad": null,
+                                "labelStyle": "color:#996633",
+                                "labelWidth": 80,
+                                "name": "sensorsum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField19",
+                            "designerId": "07817960-7082-4651-86d8-61bdb1ca9eb9"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "其它",
+                                "labelPad": null,
+                                "labelStyle": "color:#cc6600",
+                                "labelWidth": 80,
+                                "name": "othersum",
+                                "padding": "0 10",
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField22",
+                            "designerId": "b51ce7d7-cc83-4dbf-90f1-32e8139967cc"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "今日新增",
+                                "labelPad": null,
+                                "labelStyle": "color:#009900",
+                                "labelWidth": 80,
+                                "name": "addtotoday",
+                                "padding": "0 10",
+                                "style": [
+                                    "color:#00FF00"
+                                ],
+                                "value": "N/n"
+                            },
+                            "name": "MyDisplayField23",
+                            "designerId": "aad8b732-ea10-4e4e-a894-d99de8940c16"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": null,
+                "layout|anchor": "0 70%",
+                "manageHeight": null,
+                "title": ""
+            },
+            "name": "MyPanel2",
+            "designerId": "481251af-a139-495a-8b48-e3f74bdc75e1",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "EquipmentList",
+                        "store": "EquipmentModels",
+                        "title": "设备列表"
+                    },
+                    "name": "MyGridPanel1",
+                    "designerId": "21098cfd-cd1f-4270-ad78-dc2c667a1514",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView1",
+                            "designerId": "4c043a5d-addb-4303-bcc8-afc5126eaffa"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "afterPageText": "页/{0}",
+                                "beforePageText": "第",
+                                "displayInfo": true,
+                                "displayMsg": "记录: {0} - {1} / {2}",
+                                "dock": "bottom",
+                                "store": "EquipmentModels",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar1",
+                            "designerId": "ea452f5e-63c0-45d7-89e5-64c6556db8c0"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id",
+                                "format": "00",
+                                "text": "ID"
+                            },
+                            "name": "MyNumberColumn1",
+                            "designerId": "ac76f498-9e07-484e-9fa9-4e8c068306f8"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "mac",
+                                "text": "Mac地址"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "0bbec20e-7667-499d-89a9-c4134d01fd38"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "style",
+                                "text": "设备类型"
+                            },
+                            "name": "MyColumn5",
+                            "designerId": "96fc8904-da1a-4859-8516-ba29daa3b133"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "description",
+                                "text": "设备描述"
+                            },
+                            "name": "MyColumn7",
+                            "designerId": "fba5c616-d7c7-4f8f-bc19-cc78ecd88b19"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "isworking",
+                                "text": "是否启用"
+                            },
+                            "name": "MyColumn12",
+                            "designerId": "3effb26d-b9e0-4d27-8cf3-8c8a16de874c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "installation date",
+                                "text": "按照日期"
+                            },
+                            "name": "MyColumn13",
+                            "designerId": "949f0081-9720-4602-92e1-15e804702b38"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "manufacturer",
+                                "text": "厂商"
+                            },
+                            "name": "MyColumn14",
+                            "designerId": "4b5a0440-8a7d-41ba-84f0-9297f718524f"
+                        },
+                        {
+                            "type": "Ext.panel.Tool",
+                            "reference": {
+                                "name": "tools",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "puls",
+                                "type": "plus"
+                            },
+                            "name": "MyTool1",
+                            "designerId": "6dd5f300-3645-48cf-a128-498f665788ce",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onPulsClick",
+                                        "implHandler": [
+                                            "var equip=Ext.create('smart.view.AddNewEquipment');",
+                                            "                equip.show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onPulsClick",
+                                    "designerId": "f779546d-3a4c-4b7f-913d-74f0433dc0e9"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

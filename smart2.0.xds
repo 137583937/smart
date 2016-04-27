@@ -1,0 +1,101 @@
+{
+    "name": "smart2.0",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 75,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "a705110d-4ce3-4545-a748-7f920677364e",
+            "3b97b49e-0aad-4777-b750-1023234c8350",
+            "5dc31d40-a63e-4263-b1ef-cc208e03cb60",
+            "efffb199-7571-441c-9741-dbce5c9b7cbc",
+            "0ab071ae-dde0-496b-92ca-9ab57263ae3e",
+            "db4a20a2-9dd6-4c40-b61e-8e9b09076147",
+            "854f13eb-72ab-4620-9f55-f240e771db1b",
+            "5814db44-1feb-474f-a5f4-53eee8667485",
+            "6b7a0173-3f8b-45ac-819a-b97500becd53",
+            "b2d461cc-fa22-475e-94a5-2d9f938308e3",
+            "623037f7-c841-4fa1-98a8-9a443721d3a9",
+            "edb595fd-2efa-4a9f-aa75-491e1b72356e",
+            "fab7bddf-47de-4cb1-9b49-ab5123c3262d",
+            "71244a97-c549-41ab-a6a0-50dc7e5d5720",
+            "462c66c1-5b52-4297-8825-3bb6ba3782f0",
+            "14474c01-7617-483b-aeed-7f231be323fc"
+        ],
+        "store": [
+            "efaec42f-c8ba-4347-9062-bb0fdf66b33c",
+            "a87bb930-87d2-49c0-b4d6-0e65c62cd9b1",
+            "1732d899-85b3-4f95-ba11-18a5981d4fd1",
+            "c1e8017b-db13-414a-89d7-1a94c07b6ec6",
+            "ffb445a1-059d-4456-a350-a03230544cd0",
+            "e60d83c6-8967-4b6d-95d6-68ef8b16e7c8",
+            "b71732d5-2fa9-4866-a151-a7922dab1a63",
+            "d2030e31-1832-4635-91c1-fe57a5530f91",
+            "5fcc7f52-02c1-4f69-ae57-0dcc1656263d",
+            "0ce6d1e7-b3cc-44ae-bd0b-60291c7846b4",
+            "9b8416e9-3b98-4e4d-b3bb-b1085fd1ed19",
+            "9199138a-4b2e-463a-aaf8-6c64fb4afa32"
+        ],
+        "controller": [
+            "a1a2a521-9cea-4ac5-8c08-a51c4595c78d",
+            "02bd4713-62f3-4d0a-926b-1c404d627bff",
+            "ed72923b-871f-4362-9f38-352c37519e22",
+            "5972972d-b8bd-4cb1-991b-c91202ca54ef",
+            "43022a89-3a9a-473d-a634-68d8e186536f"
+        ],
+        "model": [
+            "466000f4-5db0-41f0-8f38-4133ecd541cf",
+            "d4ada9fa-9009-4199-998c-13667ce5da1e",
+            "1aaee59f-e467-4d03-8cd8-af96ceedd82e",
+            "14b8c48a-8d3b-426e-a187-d7f1254d3d4e",
+            "193ab3b2-3eee-4446-bc2a-802247412d0c",
+            "6f9b5a2b-e71d-41d9-a6af-f444ce487959",
+            "2cc809f7-ec08-4f18-a1a2-745673ca210c",
+            "4e1cd11e-b758-4029-82b0-99af5f3d2ff9",
+            "3af1900a-9aa8-4afc-b8df-4aa54b8960e9",
+            "aefd3162-3bc3-47ae-8361-931a68118cc3"
+        ],
+        "resource": [
+            "78dfd286-f2d0-4843-9e8f-c71156230a59",
+            "e037fd01-a6c8-4ea4-98c3-f97d954d61d0",
+            "d793ee5d-0921-43dd-bdce-60d9b6fbe3c4",
+            "404d5bf5-ec97-4abb-9ed3-32155bee12f6",
+            "fe961cc6-45c9-4d36-beb5-da2d4183add1",
+            "aa515717-0628-4214-8455-0a48eef44d21",
+            "7a07c486-26df-4ac6-ac84-89ba8ca3f964",
+            "e54351c5-737d-4581-83bd-ef0a4b1edf99",
+            "a0aa0d56-ec37-420a-81d0-e028fdff6c92",
+            "fe1c88a0-1687-46d3-82fa-14f38445f0f6",
+            "5556f519-81ac-4a5d-bb81-7d4f4935addc",
+            "a456a68a-653e-4839-b971-bce3aec9ccf4",
+            "08a82f5a-6a95-43df-988b-14aec8f8a31d",
+            "89ece53a-3f6d-409e-bee8-ce06ca29e51c",
+            "1bcd9fe8-c322-4b1a-b0bc-5f07ea9ea9cf",
+            "1d5d07dd-5afb-4b6f-9166-f1ecb8ecbecd",
+            "93a067a1-2ed2-445e-9335-cd7a34a5c8e8",
+            "be53e0a6-b557-4ee0-88e8-fe1b11f170f3",
+            "c233e7b7-9259-4c86-b0f6-3715996a0e69",
+            "bc39f7c8-3fe1-44b5-9ad3-69a66af85cbf"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

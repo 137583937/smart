@@ -1,0 +1,84 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MainConroller",
+            "FirstController",
+            "UserController",
+            "EquipmentController",
+            "SeverController"
+        ],
+        "models": [
+            "NoticeModel",
+            "UserModel",
+            "UserEquipmentModel",
+            "EquipmentModel",
+            "SeverMemoryModel",
+            "SeverHttpRequestModel",
+            "SeverClusterModel",
+            "EquipmentWithUser",
+            "SeverRuningLog",
+            "MgrList"
+        ],
+        "name": "smart",
+        "stores": [
+            "NoticeModels",
+            "UserModels",
+            "UserEquipmentModels",
+            "EquipmentModels",
+            "SeverMemoryModels",
+            "SeverHttpRequestModels",
+            "SeverClusterModels",
+            "EquipmentWithUsers",
+            "SeverRuningLogs",
+            "SeverErrorLog",
+            "SeverOutLog",
+            "MgrLists"
+        ],
+        "views": [
+            "MainView",
+            "Login",
+            "User",
+            "Sever",
+            "First",
+            "Equipment",
+            "NoticeWindow",
+            "UserDetail",
+            "AddNewEquipment",
+            "AddNewUser",
+            "EquipmentDetail",
+            "AddNews",
+            "Mgr.List",
+            "Mgr.AddAndEdit",
+            "User.Search",
+            "MyGridPanel2"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.getBody().setStyle({",
+                    "    'background':'#99ccff'",
+                    "});"
+                ]
+            },
+            "name": "launch",
+            "designerId": "9654d1a8-16f1-4dfd-a94b-a22b6c89e8d8"
+        }
+    ]
+}

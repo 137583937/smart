@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_b346altx",
+        "url": "json/SeverLog.asp"
+    },
+    "name": "json2",
+    "designerId": "93a067a1-2ed2-445e-9335-cd7a34a5c8e8"
+}

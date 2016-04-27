@@ -1,0 +1,102 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SeverController"
+    },
+    "name": "MyController1",
+    "designerId": "43022a89-3a9a-473d-a634-68d8e186536f",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#SeverInfo",
+                "designer|params": [
+                    "component",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.form.Panel",
+                "fn": "onSeverInfoAfterRender",
+                "implHandler": [
+                    "//加载服务器基本信息",
+                    "",
+                    " Ext.Ajax.request({",
+                    "            url: 'SeverInfoAction',",
+                    "            params: {",
+                    "",
+                    "            },",
+                    "            success: function(response){",
+                    "                content = response.responseText;",
+                    "",
+                    "                //接收到的数据转化成Data对象，送给Form",
+                    "",
+                    "                var datejson=Ext.JSON.decode(content);",
+                    "                console.log(datejson);",
+                    "                component.getForm().setValues(datejson);",
+                    "",
+                    "            },",
+                    "            failure: function(response, opts) {",
+                    "                console.log('server-side failure with status code ' + response.status);",
+                    "            }",
+                    "        });",
+                    ""
+                ],
+                "name": "afterrender"
+            },
+            "name": "onSeverInfoAfterRender",
+            "designerId": "cb343adc-3d7d-4486-8288-53ee45a1c909"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#SeverClusterInfo",
+                "designer|params": [
+                    "component",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.form.Panel",
+                "fn": "onSeverClusterInfoAfterRender",
+                "implHandler": [
+                    "//加载服务器集群的基本信息",
+                    "",
+                    " Ext.Ajax.request({",
+                    "            url: 'SeverClusterInfoAction',",
+                    "            params: {",
+                    "",
+                    "            },",
+                    "            success: function(response){",
+                    "                content = response.responseText;",
+                    "",
+                    "                //接收到的数据转化成Data对象，送给Form",
+                    "",
+                    "                var datejson=Ext.JSON.decode(content);",
+                    "                console.log(datejson);",
+                    "                component.getForm().setValues(datejson);",
+                    "",
+                    "            },",
+                    "            failure: function(response, opts) {",
+                    "                console.log('server-side failure with status code ' + response.status);",
+                    "            }",
+                    "        });"
+                ],
+                "name": "afterrender"
+            },
+            "name": "onSeverClusterInfoAfterRender",
+            "designerId": "083f630c-1f8d-4690-8160-b418f1ec0b50"
+        }
+    ]
+}

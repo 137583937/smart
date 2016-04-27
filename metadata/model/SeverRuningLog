@@ -1,0 +1,58 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "severruninglog",
+        "designer|userClassName": "SeverRuningLog"
+    },
+    "name": "MyModel",
+    "designerId": "3af1900a-9aa8-4afc-b8df-4aa54b8960e9",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "time",
+                "type": "date"
+            },
+            "name": "MyField13",
+            "designerId": "072c554d-98f3-4f6c-850f-f2ba9d0c9793"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title",
+                "type": "string"
+            },
+            "name": "MyField14",
+            "designerId": "3c002f77-50d0-4613-ad38-9637d72bce5c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description",
+                "type": "string"
+            },
+            "name": "MyField15",
+            "designerId": "3970a493-195c-42eb-ad14-27a18d2adf09"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": null,
+        "designer|userAlias": "severclustermodels",
+        "designer|userClassName": "SeverClusterModels",
+        "model": "SeverClusterModel",
+        "storeId": "SeverClusterModels"
+    },
+    "designerId": "b71732d5-2fa9-4866-a151-a7922dab1a63",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "SeverClusterAction"
+            },
+            "name": "MyAjaxProxy9",
+            "designerId": "490ba604-5a48-4ece-9ee4-9c62194c0de5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader9",
+                    "designerId": "651cf7ff-2135-4cdd-a95d-61f1d066be79"
+                }
+            ]
+        }
+    ]
+}

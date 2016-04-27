@@ -1,0 +1,14 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css_c695o8q2",
+        "url": "css/border.css"
+    },
+    "name": "css",
+    "designerId": "d793ee5d-0921-43dd-bdce-60d9b6fbe3c4"
+}

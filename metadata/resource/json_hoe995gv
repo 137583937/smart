@@ -1,0 +1,14 @@
+{
+    "type": "jsonresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "json_hoe995gv",
+        "url": "json/SeverInfo.asp"
+    },
+    "name": "json2",
+    "designerId": "89ece53a-3f6d-409e-bee8-ce06ca29e51c"
+}

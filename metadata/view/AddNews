@@ -1,0 +1,121 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userClassName": "AddNews",
+        "height": 530,
+        "padding": null,
+        "title": "添加新通知",
+        "width": 773
+    },
+    "name": "MyWindow",
+    "designerId": "edb595fd-2efa-4a9f-aa75-491e1b72356e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "header": false,
+                "title": "My Form",
+                "url": "AddNoticeAction"
+            },
+            "name": "MyForm1",
+            "designerId": "5894acb8-38f8-4272-9da8-f480b17539f6",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "标题",
+                        "labelAlign": "right",
+                        "labelWidth": 80,
+                        "name": "title",
+                        "width": 385
+                    },
+                    "name": "MyTextField",
+                    "designerId": "9962ba60-db50-42fd-a7d0-c7de382d7618"
+                },
+                {
+                    "type": "Ext.form.field.HtmlEditor",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "内容",
+                        "height": 385,
+                        "labelAlign": "right",
+                        "labelWidth": 80,
+                        "name": "content",
+                        "width": 700
+                    },
+                    "name": "MyHtmlEditor",
+                    "designerId": "13ab22d2-a5f1-4b30-963d-578f851ea87b"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "dock": "bottom"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "e6c07af9-13c0-4dac-a6da-e64f422f0454",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "SubmitAddNews",
+                                "layout|flex": null,
+                                "text": "提交",
+                                "width": 100
+                            },
+                            "name": "MyButton1",
+                            "designerId": "5655197c-8881-41f1-a621-0987882e9188"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "QuitAddNews",
+                                "layout|flex": null,
+                                "text": "关闭",
+                                "width": 100
+                            },
+                            "name": "MyButton2",
+                            "designerId": "81ca33af-67fb-4b9f-9255-f5858b11e498"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

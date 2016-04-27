@@ -1,0 +1,42 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "severclustermodel",
+        "designer|userClassName": "SeverClusterModel"
+    },
+    "name": "MyModel",
+    "designerId": "2cc809f7-ec08-4f18-a1a2-745673ca210c",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField3",
+            "designerId": "22853289-fe72-48d9-a037-633bbda35459"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "business"
+            },
+            "name": "MyField4",
+            "designerId": "b77c4fc5-6d30-41c9-a4d3-32c3ed082311"
+        }
+    ]
+}

@@ -1,0 +1,527 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "First",
+        "height": null,
+        "layout": "anchor",
+        "title": "首页",
+        "width": 810
+    },
+    "name": "MyPanel1",
+    "designerId": "0ab071ae-dde0-496b-92ca-9ab57263ae3e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": null,
+                "container|align": "stretch",
+                "header": false,
+                "height": 192,
+                "itemId": "MgrFrom",
+                "layout": "hbox",
+                "manageHeight": false,
+                "padding": "10 0 0 10",
+                "title": "My Form"
+            },
+            "name": "MyForm",
+            "designerId": "1a2bac8c-7771-420e-8880-0e5f68a55985",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|columns": 2,
+                        "height": "100%",
+                        "layout": "table",
+                        "title": "管理员信息"
+                    },
+                    "name": "MyFieldSet",
+                    "designerId": "c59a564f-6786-4dfe-bb7c-c0afc629fbe1",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "编号",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "num",
+                                "value": "001"
+                            },
+                            "name": "MyDisplayField",
+                            "designerId": "47c052f8-f882-45d6-ac7e-02abbbffa4f2"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "ID",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "id",
+                                "value": "201455445"
+                            },
+                            "name": "MyDisplayField3",
+                            "designerId": "2b81c9da-ec24-4990-a66a-cd4c1e7d912e"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "昵称",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "nickname",
+                                "value": "小读者"
+                            },
+                            "name": "MyDisplayField1",
+                            "designerId": "1196e69e-bc26-4361-98f4-010613b5717d"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "级别",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "type",
+                                "value": "普通管理员"
+                            },
+                            "name": "MyDisplayField9",
+                            "designerId": "96289de3-abb6-4924-b313-b8492d26b9f5"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "姓名",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "name",
+                                "value": "钢铁侠"
+                            },
+                            "name": "MyDisplayField11",
+                            "designerId": "009b9613-16a9-4a8d-b0b4-47ed15c9ca17"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Email",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "email",
+                                "value": "126@126.Com"
+                            },
+                            "name": "MyDisplayField13",
+                            "designerId": "804e9138-87ce-4cdb-ad8b-ed7f73488678"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "电话",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "tel",
+                                "value": "137XXXXXXX"
+                            },
+                            "name": "MyDisplayField12",
+                            "designerId": "0272ccf7-c300-4bb3-89cf-ae65defee18d"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "IP",
+                                "labelWidth": 50,
+                                "margin": "0 4",
+                                "name": "ip",
+                                "value": [
+                                    "218.199.81.152"
+                                ]
+                            },
+                            "name": "MyDisplayField10",
+                            "configAlternates": {
+                                "value": "object"
+                            },
+                            "designerId": "8ffb27b8-ca3f-43f7-88ff-83ae3d382d14"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "上次登录信息",
+                                "labelWidth": 90,
+                                "layout|colspan": 2,
+                                "margin": "0 4",
+                                "name": "updatetime",
+                                "style": [
+                                    "border:1px solid #ccc"
+                                ],
+                                "value": "2014-12-15 12:22 IP:110.110.110.110"
+                            },
+                            "name": "MyDisplayField2",
+                            "designerId": "f551d288-f654-4841-8e62-3d7fbf04a5c7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "系统服务信息"
+                    },
+                    "name": "MyFieldSet1",
+                    "designerId": "23b4bd1f-d7b5-411a-bf8e-2e2507689f8f",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "layout|anchor": "100%",
+                                "value": "Display Field"
+                            },
+                            "name": "MyDisplayField4",
+                            "designerId": "f917fa7a-1493-4cd5-ac4e-03773839ebe7"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "layout|anchor": "100%",
+                                "value": "Display Field"
+                            },
+                            "name": "MyDisplayField5",
+                            "designerId": "2cf30f13-a07b-4052-b4a5-5b46a8217376"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "layout|anchor": "100%",
+                                "value": "Display Field"
+                            },
+                            "name": "MyDisplayField6",
+                            "designerId": "7051abd7-6f6c-4798-827a-b3191c0a804b"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "layout|anchor": "100%",
+                                "value": "Display Field"
+                            },
+                            "name": "MyDisplayField8",
+                            "designerId": "610c0cca-3a2d-4eba-9378-9615c02b9bc4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "left",
+                        "layout|flex": 1
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "d3f5e71b-d3e5-4d5a-80fc-ce2a7b103992",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": null,
+                                "itemId": "EditeMgrInfo",
+                                "layout|flex": null,
+                                "margin": "4 0",
+                                "menuAlign": "r-br",
+                                "text": "修改管理员信息"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "26c0e3b3-52ab-4156-ab86-5893f148026b"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "ListMgrs",
+                                "layout|flex": null,
+                                "menuAlign": "r",
+                                "text": "查看所有管理员"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "0a49c4f1-7679-46ca-95b5-6ef641e421be"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "header": false,
+                "height": null,
+                "layout|anchor": "0 70%",
+                "manageHeight": false,
+                "title": "系统通知"
+            },
+            "name": "MyPanel1",
+            "designerId": "1c199620-8c14-4f42-8c04-b674e88eab75",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": "100%",
+                        "id": "NoticeGrid",
+                        "itemId": null,
+                        "manageHeight": false,
+                        "overflowY": null,
+                        "sortableColumns": false,
+                        "store": "NoticeModels",
+                        "title": " 系统通知"
+                    },
+                    "name": "MyGridPanel",
+                    "designerId": "9fd745be-167f-461b-b4a1-140dc6fc7b83",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "overflowX": "scroll",
+                                "overflowY": "scroll"
+                            },
+                            "name": "MyGridView",
+                            "designerId": "f42b45b7-4b5b-4256-a622-516e86f9a63f"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel",
+                            "designerId": "fb3c8904-c68a-423c-9e64-0165060ef01e"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id",
+                                "format": "0,000",
+                                "text": "ID",
+                                "width": 100
+                            },
+                            "name": "MyNumberColumn1",
+                            "designerId": "2ee5d713-01cd-4eed-bacd-1eb514ce9863"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "type",
+                                "text": "类型"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "a4c687ad-1206-4c9b-ab57-07ad43fae33d"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "title",
+                                "flex": 1,
+                                "text": "标题",
+                                "width": "80%"
+                            },
+                            "name": "MyColumn7",
+                            "designerId": "dcff0ebd-6171-40ac-a7b7-6bfb30b6205e"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "date",
+                                "format": "Y-j-m",
+                                "text": "日期"
+                            },
+                            "name": "MyDateColumn1",
+                            "designerId": "78e85239-72e1-4753-aadb-9573857d0649"
+                        },
+                        {
+                            "type": "Ext.panel.Tool",
+                            "reference": {
+                                "name": "tools",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "Add",
+                                "type": "plus"
+                            },
+                            "name": "MyTool",
+                            "designerId": "3f4524e1-16af-4cfa-903d-c2a26965aea8",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "owner",
+                                            "tool",
+                                            "event"
+                                        ],
+                                        "fn": "callback",
+                                        "implHandler": [
+                                            "var addnews=Ext.create('smart.view.AddNews');",
+                                            "addnews.show();"
+                                        ]
+                                    },
+                                    "name": "callback",
+                                    "designerId": "2e8891a3-37c9-48a6-8ede-f1893a5bb5b0"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "NoticeModels",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar",
+                            "designerId": "9a077da6-dec9-4658-a6d5-8cac6a732731"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
