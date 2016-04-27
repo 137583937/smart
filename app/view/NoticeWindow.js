@@ -61,8 +61,8 @@ Ext.define('smart.view.NoticeWindow', {
                     xtype: 'panel',
                     region: 'north',
                     data: {
-                        title: '我是小标题',
-                        content: '没有文本内容',
+                        title: '请输入标题',
+                        content: '请输入文章正文',
                         time: '2012-2-2'
                     },
                     height: '100%',

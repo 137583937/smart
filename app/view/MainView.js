@@ -68,7 +68,7 @@ Ext.define('smart.view.MainView', {
                                     id: 'First',
                                     margin: 1,
                                     hideOnClick: false,
-                                    text: '首页'
+                                    text: '首页概览'
                                 },
                                 {
                                     xtype: 'menuitem',

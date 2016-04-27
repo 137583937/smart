@@ -98,21 +98,21 @@ Ext.define('smart.view.Sever', {
                                                     fieldLabel: '系统版本',
                                                     labelAlign: 'right',
                                                     name: 'systemversion',
-                                                    value: 'Display Field'
+                                                    value: '3.0.1'
                                                 },
                                                 {
                                                     xtype: 'displayfield',
                                                     fieldLabel: '更新时间',
                                                     labelAlign: 'right',
                                                     name: 'update',
-                                                    value: 'Display Field'
+                                                    value: '2016-4-20 18:21'
                                                 },
                                                 {
                                                     xtype: 'displayfield',
                                                     fieldLabel: 'JBoss版本',
                                                     labelAlign: 'right',
                                                     name: 'jbossversion',
-                                                    value: 'Display Field'
+                                                    value: 'Jboss 7.0.1'
                                                 },
                                                 {
                                                     xtype: 'displayfield',

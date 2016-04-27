@@ -147,7 +147,7 @@ Ext.define('smart.view.Equipment', {
                                     labelStyle: 'color:#009900',
                                     labelWidth: 80,
                                     name: 'addtotoday',
-                                    value: 'N/n'
+                                    value: '0'
                                 }
                             ]
                         }

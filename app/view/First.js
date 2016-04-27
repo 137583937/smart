@@ -83,7 +83,7 @@ Ext.define('smart.view.First', {
                                     fieldLabel: '昵称',
                                     labelWidth: 50,
                                     name: 'nickname',
-                                    value: '小读者'
+                                    value: '小者'
                                 },
                                 {
                                     xtype: 'displayfield',
@@ -99,7 +99,7 @@ Ext.define('smart.view.First', {
                                     fieldLabel: '姓名',
                                     labelWidth: 50,
                                     name: 'name',
-                                    value: '钢铁侠'
+                                    value: '杨同学'
                                 },
                                 {
                                     xtype: 'displayfield',
@@ -107,7 +107,7 @@ Ext.define('smart.view.First', {
                                     fieldLabel: 'Email',
                                     labelWidth: 50,
                                     name: 'email',
-                                    value: '126@126.Com'
+                                    value: 'yang@edu.hust.Com'
                                 },
                                 {
                                     xtype: 'displayfield',
@@ -115,7 +115,7 @@ Ext.define('smart.view.First', {
                                     fieldLabel: '电话',
                                     labelWidth: 50,
                                     name: 'tel',
-                                    value: '137XXXXXXX'
+                                    value: '13700000254'
                                 },
                                 {
                                     xtype: 'displayfield',
@@ -133,7 +133,7 @@ Ext.define('smart.view.First', {
                                     fieldLabel: '上次登录信息',
                                     labelWidth: 90,
                                     name: 'updatetime',
-                                    value: '2014-12-15 12:22 IP:110.110.110.110'
+                                    value: '2015-12-15 14:23 IP:218.199.11.180'
                                 }
                             ]
                         },
@@ -145,25 +145,25 @@ Ext.define('smart.view.First', {
                                     xtype: 'displayfield',
                                     anchor: '100%',
                                     fieldLabel: 'Label',
-                                    value: 'Display Field'
+                                    value: '运行状态'
                                 },
                                 {
                                     xtype: 'displayfield',
                                     anchor: '100%',
                                     fieldLabel: 'Label',
-                                    value: 'Display Field'
+                                    value: '系统告警'
                                 },
                                 {
                                     xtype: 'displayfield',
                                     anchor: '100%',
                                     fieldLabel: 'Label',
-                                    value: 'Display Field'
+                                    value: '设备告警'
                                 },
                                 {
                                     xtype: 'displayfield',
                                     anchor: '100%',
                                     fieldLabel: 'Label',
-                                    value: 'Display Field'
+                                    value: '日志告警'
                                 }
                             ]
                         }

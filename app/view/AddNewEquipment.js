@@ -74,13 +74,13 @@ Ext.define('smart.view.AddNewEquipment', {
                             xtype: 'textfield',
                             width: 300,
                             fieldLabel: 'Label',
-                            name: 'more'
+                            name: '其他1'
                         },
                         {
                             xtype: 'textfield',
                             width: 300,
                             fieldLabel: 'Label',
-                            name: 'more'
+                            name: '其他2'
                         },
                         {
                             xtype: 'textareafield',

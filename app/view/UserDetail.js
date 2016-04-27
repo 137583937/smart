@@ -164,12 +164,12 @@ Ext.define('smart.view.UserDetail', {
                                 {
                                     xtype: 'gridcolumn',
                                     dataIndex: 'mac',
-                                    text: 'My Field'
+                                    text: '用户昵称'
                                 },
                                 {
                                     xtype: 'gridcolumn',
                                     dataIndex: 'descirption',
-                                    text: 'Descirption'
+                                    text: '备注描述'
                                 },
                                 {
                                     xtype: 'gridcolumn',
